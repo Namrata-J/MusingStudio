@@ -1,2 +1,3 @@
-# MusingStudio
-Musing studio is a vedio library app build using ReactJs. It provides various genres of songs you could listen to and watch as well. 
+## Video Library Backend
+
+This folder contains the Mock Backend created for Video Library App. It contains different API end-points and database configuration for building Video Library; so that you can focus on building Frontend.
