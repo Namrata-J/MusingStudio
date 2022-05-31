@@ -1,9 +1,9 @@
-import "./App.css";
-import logo from "./logo.png";
+import { RoutesComponent } from "./components/";
 
 function App() {
   return (
     <div>
+      <RoutesComponent />
     </div>
   );
 }

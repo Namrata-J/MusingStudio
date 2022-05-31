@@ -1,0 +1,49 @@
+@import url("../../utils/base.css");
+
+.ms_sideBar-component {
+    background-color: var(--gray-shade-two);
+    height: 90vh;
+    padding: 1rem 0rem;
+    width: 12.5rem;
+}
+
+.ms_sideBar-list-item {
+    color: var(--gray-shade-three);
+    gap: 1rem;
+    padding: 0.5rem 0rem;
+    padding-left: 1.3rem;
+}
+
+.ms_sideBar-list-item:hover {
+    color: var(--action);
+}
+
+.ms_sideBar-component a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 750px) {
+    .ms_sideBar-component {
+        height: 92vh;
+        position: relative;
+        width: 14rem;
+        z-index: 1;
+    }
+
+    .ms_sideBar-list-item {
+        padding-left: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ms_sideBar-component {
+        height: 93vh;
+        width: 12rem;
+    }
+
+    .ms_sideBar-list-item {
+        font-size: small;
+        padding-left: 1.2rem;
+        gap: 1.5rem;
+    }
+}

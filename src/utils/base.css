@@ -1,0 +1,31 @@
+@import url("https://expeditech-ui.netlify.app/components/index.css");
+
+:root {
+    --gray-shade-one: rgb(38, 39, 41);
+    --gray-shade-two: rgb(52, 53, 54);
+    --gray-shade-three: rgb(109, 109, 110);
+}
+
+.ms_flex {
+    display: flex;
+}
+
+.ms_flex-c {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ms_cp {
+    cursor: pointer;
+}
+
+.ms_input {
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+}
+
+.ms_fw-b {
+    font-weight: bold;
+}
