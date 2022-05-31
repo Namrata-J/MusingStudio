@@ -1,0 +1,295 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_header-component,
+.ms_profile-popUp-container,
+.ms_search-popUp-container {
+    background-color: var(--gray-shade-two);
+}
+
+.ms_header-component,
+.ms_profile-icon-container {
+    position: relative;
+}
+
+.ms_header-component,
+.ms_search-popUp-container {
+    height: 10vh;
+}
+
+.ms_header-hamburger-section {
+    width: 5%;
+}
+
+.ms_header-hamburger,
+.ms_header-other-options-section,
+.ms_close-search-popUp-container {
+    font-size: 1.5rem;
+}
+
+.ms_header-hamburger,
+.ms_logo-mini-text,
+.ms_header-searchBar-subsection1,
+.ms_header-other-options-section,
+.ms_profile-popUp-container a,
+.ms_search-popUp-container>*,
+.ms_search-popUp-section1 .ms_searchBar {
+    color: var(--gray-shade-three);
+}
+
+.ms_header-logo {
+    gap: 0.3rem;
+}
+
+.ms_header-logo-section {
+    justify-content: flex-start;
+    width: 15%;
+}
+
+.ms_header-logo-icon {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.ms_header-logo-icon,
+.ms_logo-macro-text,
+.ms_header-other-options-section>*:hover,
+.ms_profile-popUp-container a:hover,
+.ms_close-search-popUp-container:hover,
+.ms_reset-searchInput:hover {
+    color: var(--action);
+}
+
+.ms_header-logo-text {
+    flex-direction: column;
+}
+
+.ms_header-logo-text p,
+.ms_profile-popUp-container li {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_logo-macro-text {
+    font-size: 1.2rem;
+}
+
+.ms_logo-mini-text {
+    font-size: 0.9rem;
+}
+
+.ms_header-search-section {
+    width: 60%;
+}
+
+.ms_header-searchBar {
+    background-color: var(--gray-shade-one);
+    height: 60%;
+    width: 80%;
+}
+
+.ms_header-searchBar-subsection1 {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    width: 90%;
+    height: 100%;
+}
+
+.ms_header-searchBar-subsection2 {
+    background-color: var(--action);
+    width: 10%;
+    height: 100%;
+}
+
+.ms_searchBar-icon {
+    color: var(--gray-shade-two);
+    font-size: 1.2rem;
+}
+
+.ms_header-other-options-section {
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    width: 20%;
+}
+
+.ms_search-icon-container {
+    display: none;
+}
+
+.ms_profile-popUp-container {
+    box-shadow: 0px 0px 5px 0px var(--black);
+    padding: 0.3rem 0rem;
+    right: 10px;
+}
+
+.ms_profile-popUp-container,
+.ms_search-popUp-container {
+    position: absolute;
+}
+
+.ms_profile-popUp-container ul {
+    list-style: none;
+}
+
+.ms_profile-popUp-container a {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.ms_search-popUp-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 2px;
+    width: 100%;
+}
+
+.ms_search-popUp-container>* {
+    height: 7vh;
+}
+
+.ms_search-popUp-section1,
+.ms_search-popUp-section2 {
+    align-items: center;
+}
+
+.ms_search-popUp-section1 {
+    width: 90%;
+}
+
+.ms_search-popUp-section1 .ms_searchBar {
+    width: 90%;
+}
+
+.ms_search-popUp-section1 .ms_searchBar {
+    padding-left: 0.5rem;
+}
+
+.ms_search-popUp-section2 {
+    width: 10%;
+}
+
+@media only screen and (max-width: 900px) {
+    .ms_header-logo-section {
+        width: 20%;
+    }
+
+    .ms_header-search-section {
+        width: 65%;
+    }
+
+    .ms_header-other-options-section {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .ms_header-component {
+        height: 8vh;
+    }
+
+    .ms_header-hamburger-section {
+        width: 10%;
+    }
+
+    .ms_header-hamburger,
+    .ms_header-other-options-section {
+        font-size: 1.2rem;
+    }
+
+    .ms_header-logo-icon {
+        font-size: 1.5rem;
+        margin-left: 0rem;
+    }
+
+    .ms_logo-macro-text,
+    .ms_searchBar-icon {
+        font-size: 1rem;
+    }
+
+    .ms_logo-mini-text {
+        font-size: 0.7rem;
+    }
+
+    .ms_header-searchBar {
+        height: 70%;
+        width: 90%;
+    }
+
+    .ms_header-searchBar-subsection1 {
+        font-size: 0.8rem;
+    }
+
+    .ms_header-other-options-section {
+        padding-right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ms_header-component {
+        height: 7vh;
+    }
+
+    .ms_header-hamburger-section {
+        width: 8%;
+    }
+
+    .ms_header-hamburger,
+    .ms_header-other-options-section {
+        font-size: 1rem;
+    }
+
+    .ms_header-logo-icon {
+        font-size: 1.2rem;
+    }
+
+    .ms_logo-macro-text,
+    .ms_searchBar-icon {
+        font-size: 0.8rem;
+    }
+
+    .ms_logo-mini-text {
+        font-size: 0.5rem;
+    }
+
+    .ms_header-searchBar {
+        width: 80%;
+    }
+
+    .ms_header-searchBar-subsection1 {
+        font-size: 0.7rem;
+    }
+
+    .ms_header-other-options-section {
+        padding-right: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .ms_header-hamburger-section {
+        width: 15%;
+    }
+
+    .ms_header-search-section {
+        display: none;
+    }
+
+    .ms_search-icon-container {
+        display: block;
+    }
+
+    .ms_header-other-options-section {
+        gap: 1.2rem;
+        width: 55%;
+    }
+
+    .ms_header-logo-section {
+        width: 30%;
+    }
+
+    .ms_profile-popUp-container a {
+        font-size: 0.7rem;
+        padding: 0rem 0.8rem;
+    }
+}
