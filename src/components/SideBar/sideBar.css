@@ -1,7 +1,8 @@
 @import url("../../utils/base.css");
 
 .ms_sideBar-component {
-    background-color: var(--gray-shade-two);
+    background-color: var(--black);
+    border-right: 1px solid var(--gray-shade-two);
     height: 90vh;
     padding: 1rem 0rem;
     width: 12.5rem;
