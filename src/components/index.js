@@ -5,6 +5,11 @@ import { Logo } from "./Logo/Logo";
 import { SearchBar } from "./SearchBar/SearchBar";
 import { ProfilePopUp } from "./ProfilePopUp/ProfilePopUp";
 import { SearchPopUp } from "./SearchPopUp/SearchPopUp";
+import { Carousel } from "./Carousel/Carousel";
+import { Player } from "./Player/Player";
+import { HomePageCarousel } from "./Carousel/MainCarousel";
+import { CollectionByDiffCategories } from "./MusingStudioCollection/CollectionByDiffCategories";
+import { CollectionByArtists } from "./MusingStudioCollection/CollectionByArtists";
 
 export {
     Header,
@@ -13,5 +18,10 @@ export {
     Logo,
     SearchBar,
     ProfilePopUp,
-    SearchPopUp
+    SearchPopUp,
+    Carousel,
+    Player,
+    HomePageCarousel,
+    CollectionByDiffCategories,
+    CollectionByArtists
 };

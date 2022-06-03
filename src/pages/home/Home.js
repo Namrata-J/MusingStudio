@@ -1,5 +1,5 @@
 import "./home.css";
-import { Header, SideBar } from "../../components";
+import { Header, SideBar, HomePageCarousel, CollectionByDiffCategories, CollectionByArtists } from "../../components";
 
 const HomePage = () => {
     return (
@@ -9,6 +9,11 @@ const HomePage = () => {
             </div>
             <div className="ms_homepage-main-section ms_flex">
                 <SideBar />
+                <div className="ms_homepage-content-section content-section ms_flex">
+                    <HomePageCarousel />
+                    <CollectionByDiffCategories />
+                    <CollectionByArtists />
+                </div>
             </div>
         </div>
     );

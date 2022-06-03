@@ -14,7 +14,7 @@ const SideBar = () => {
                         <Link to={item.itemLink} key={index} >
                             <li className="ms_sideBar-list-item ms_flex">
                                 <div>{item.itemIcon}</div>
-                                <div className="ms_fw-b">{item.itemName}</div>
+                                <div className="ms_sideBar-item ms_fw-b">{item.itemName}</div>
                             </li>
                         </Link>
                     ))
