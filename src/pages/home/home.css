@@ -4,3 +4,21 @@
     background-color: var(--gray-shade-one);
     height: 100vh;
 }
+
+.content-section {
+    height: 90vh;
+    padding: 2rem;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.ms_homepage-content-section {
+    flex-direction: column;
+    gap: 5rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .ms_homepage-content-section {
+        gap: 3rem;
+    }
+}

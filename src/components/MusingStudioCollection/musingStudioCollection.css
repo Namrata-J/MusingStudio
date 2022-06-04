@@ -1,0 +1,183 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_dcc-section-subtitle,
+.ms_dcc-section-title,
+.ms_acc-section-title,
+.ms_acc-section-subtitle {
+    color: var(--white-color);
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_dcc-section-subtitle,
+.ms_acc-section-subtitle {
+    color: var(--gray-shade-three);
+}
+
+.ms_dcc-content-container,
+.ms_acc-content-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ms_dcc_card {
+    width: 11.5rem;
+}
+
+.ms_acc_card {
+    width: 9rem;
+}
+
+.ms_dcc_card-img,
+.ms_acc_card-img {
+    width: 100%;
+}
+
+.ms_dcc_card-img:hover,
+.ms_acc_card-img:hover {
+    box-shadow: 0px 0px 5px 0px var(--gray-shade-three);
+}
+
+.ms_dcc_card-title,
+.ms_acc_card-title {
+    color: var(--white-color);
+    padding-top: 0.5rem;
+}
+
+.ms_dcc_card-subtitle,
+.ms_acc_card-subtitle {
+    color: var(--gray-shade-three);
+}
+
+.ms_dcc_card-title,
+.ms_dcc_card-subtitle,
+.ms_acc_card-title,
+.ms_acc_card-subtitle {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_acc_card-title,
+.ms_acc_card-subtitle {
+    text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+    .ms_dcc_card {
+        width: 10.5rem;
+    }
+
+    .ms_dcc-content-container {
+        gap: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .ms_dcc_card {
+        width: 15rem;
+    }
+
+    .ms_dcc-content-container {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .ms_dcc_card {
+        width: 9rem;
+    }
+
+    .ms_acc_card {
+        width: 7rem;
+    }
+
+    .ms_dcc-content-container {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    .ms_dcc_card {
+        width: 12rem;
+    }
+
+    .ms_dcc-content-container {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .ms_dcc_card {
+        width: 11rem;
+    }
+
+    .ms_acc_card {
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .ms_dcc-content-container {
+        gap: 1rem;
+    }
+
+
+    .ms_dcc-section-title,
+    .ms_acc-section-title {
+        font-size: 1.5rem;
+    }
+
+    .ms_dcc-section-subtitle,
+    .ms_acc-section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .ms_dcc_card-title,
+    .ms_dcc_card-subtitle,
+    .ms_acc_card-title,
+    .ms_acc_card-subtitle {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+    .ms_dcc_card {
+        width: 9.5rem;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    .ms_dcc-content-container {
+        gap: 0.2rem;
+    }
+
+    .ms_dcc_card {
+        width: 8.5rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .ms_acc_card {
+        width: 7.5rem;
+    }
+
+    .ms_dcc_card-subtitle,
+    .ms_acc_card-subtitle {
+        font-size: 0.8rem;
+        padding-top: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 344px) {
+    .ms_dcc_card {
+        width: 7.5rem;
+    }
+
+    .ms_acc-content-container {
+        gap: 0.5rem;
+    }
+
+    .ms_acc_card {
+        width: 7rem;
+    }
+}

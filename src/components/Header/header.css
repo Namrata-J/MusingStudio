@@ -4,7 +4,8 @@
 .ms_header-component,
 .ms_profile-popUp-container,
 .ms_search-popUp-container {
-    background-color: var(--gray-shade-two);
+    background-color: var(--black);
+    border-bottom: 1px solid var(--gray-shade-two);
 }
 
 .ms_header-component,
@@ -83,6 +84,7 @@
 
 .ms_header-searchBar {
     background-color: var(--gray-shade-one);
+    border: 1px solid var(--gray-shade-two);
     height: 60%;
     width: 80%;
 }
@@ -117,7 +119,7 @@
 }
 
 .ms_profile-popUp-container {
-    box-shadow: 0px 0px 5px 0px var(--black);
+    border: 1px solid var(--gray-shade-two);
     padding: 0.3rem 0rem;
     right: 10px;
 }
@@ -143,6 +145,7 @@
     justify-content: space-between;
     padding: 2px;
     width: 100%;
+    z-index: 2;
 }
 
 .ms_search-popUp-container>* {
