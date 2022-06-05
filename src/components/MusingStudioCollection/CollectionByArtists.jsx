@@ -14,7 +14,7 @@ const CollectionByArtists = () => {
                     msCategories.musicArtists.map((eachObj) => (
                         <div className="ms_acc_card ms_cp" key={eachObj._id}>
                             <img className="ms_acc_card-img b-rad4" src={eachObj.img} />
-                            <p className="ms_acc_card-title">{eachObj.category}</p>
+                            <p className="ms_acc_card-title">{eachObj.artist_name}</p>
                             <p className="ms_acc_card-subtitle">{eachObj.description}</p>
                         </div>
                     ))
