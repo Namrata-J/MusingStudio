@@ -9,7 +9,8 @@ import {
     LogInPage,
     LogOutPage,
     SignUpPage,
-    SingleVideoCardDetailPage
+    SingleVideoCardDetailPage,
+    NoRouteMatchPage
 } from "../../pages/";
 
 const RoutesComponent = () => {
@@ -25,6 +26,7 @@ const RoutesComponent = () => {
             <Route path="/logout" element={<LogOutPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/videoDetail/:videoId" element={<SingleVideoCardDetailPage />} />
+            <Route path="*" element={<NoRouteMatchPage />} />
         </Routes>
     );
 }
