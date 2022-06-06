@@ -1,2 +1,40 @@
 @import url(../../utils//base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
+.ms_noRouteMatch-page {
+    background-color: var(--gray-shade-two);
+    height: 100vh;
+    width: 100%;
+}
+
+.ms_noRouteMatch-page img {
+    width: 22rem;
+}
+
+.ms_noRouteMatch-page p {
+    color: var(--gray-shade-three);
+    font-family: 'Gruppo', cursive;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 580px) {
+    .ms_noRouteMatch-page p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .ms_noRouteMatch-page img {
+        width: 13rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .ms_noRouteMatch-page img {
+        width: 11rem;
+    }
+
+    .ms_noRouteMatch-page p {
+        font-size: 0.8rem;
+    }
+}
