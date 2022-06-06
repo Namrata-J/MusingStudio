@@ -1,0 +1,10 @@
+.ms_videolistingpage-content-section {
+    flex-direction: column;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+    .ms_videolistingpage-content-section {
+        padding: 0.5rem 1rem;
+    }
+}
