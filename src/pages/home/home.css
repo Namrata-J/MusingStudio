@@ -21,4 +21,8 @@
     .ms_homepage-content-section {
         gap: 3rem;
     }
+
+    .content-section { 
+        padding: 1rem 2rem;
+    }
 }

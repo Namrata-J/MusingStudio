@@ -1,5 +1,5 @@
 import "./videoListing.css";
-import { Header, SideBar } from "../../components";
+import { Header, SideBar, ChipsListingSection, VideoCardListingSection } from "../../components";
 
 const VideoListingPage = () => {
     return (
@@ -9,6 +9,10 @@ const VideoListingPage = () => {
             </div>
             <div className="ms_videolistingpage-main-section ms_flex">
                 <SideBar />
+                <div className="ms_videolistingpage-content-section content-section ms_flex">
+                    <ChipsListingSection />
+                    <VideoCardListingSection />
+                </div>
             </div>
         </div>
     );

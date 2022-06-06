@@ -10,6 +10,10 @@ import { Player } from "./Player/Player";
 import { HomePageCarousel } from "./Carousel/MainCarousel";
 import { CollectionByDiffCategories } from "./MusingStudioCollection/CollectionByDiffCategories";
 import { CollectionByArtists } from "./MusingStudioCollection/CollectionByArtists";
+import { ChipsListingSection } from "./Chips/ChipsListingSection";
+import { Chip } from "./Chips/Chip";
+import { VideoCardListingSection } from "./VideoCard/VideoCardListingSection";
+import { VideoCard } from "./VideoCard/VideoCard";
 
 export {
     Header,
@@ -23,5 +27,9 @@ export {
     Player,
     HomePageCarousel,
     CollectionByDiffCategories,
-    CollectionByArtists
+    CollectionByArtists,
+    ChipsListingSection,
+    Chip,
+    VideoCardListingSection,
+    VideoCard
 };
