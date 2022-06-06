@@ -8,7 +8,8 @@ import {
     WatchLaterPage,
     LogInPage,
     LogOutPage,
-    SignUpPage
+    SignUpPage,
+    SingleVideoCardDetailPage
 } from "../../pages/";
 
 const RoutesComponent = () => {
@@ -23,6 +24,7 @@ const RoutesComponent = () => {
             <Route path="/login" element={<LogInPage />} />
             <Route path="/logout" element={<LogOutPage />} />
             <Route path="/signup" element={<SignUpPage />} />
+            <Route path="/videoDetail/:videoId" element={<SingleVideoCardDetailPage />} />
         </Routes>
     );
 }
