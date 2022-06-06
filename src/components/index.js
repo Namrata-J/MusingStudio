@@ -13,6 +13,7 @@ import { CollectionByArtists } from "./MusingStudioCollection/CollectionByArtist
 import { ChipsListingSection } from "./Chips/ChipsListingSection";
 import { Chip } from "./Chips/Chip";
 import { VideoCardListingSection } from "./VideoCard/VideoCardListingSection";
+import { VideoCard } from "./VideoCard/VideoCard";
 
 export {
     Header,
@@ -29,5 +30,6 @@ export {
     CollectionByArtists,
     ChipsListingSection,
     Chip,
-    VideoCardListingSection
+    VideoCardListingSection,
+    VideoCard
 };
