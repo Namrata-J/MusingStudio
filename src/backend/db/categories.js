@@ -146,43 +146,43 @@ export const categories = [
     artists: [
       {
         _id: uuid(),
-        category: "Arjit Singh",
+        artist_name: "Arjit Singh",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273071/musing_categories/artist1.jpg",
         description: "Best of arjit singh"
       },
       {
         _id: uuid(),
-        category: "Ankit Tiwari",
+        artist_name: "Ankit Tiwari",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273145/musing_categories/artist2.jpg",
         description: "Best of ankit tiwari"
       },
       {
         _id: uuid(),
-        category: "Dino James",
+        artist_name: "Dino James",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273208/musing_categories/artist3.jpg",
         description: "Best of dino james"
       },
       {
         _id: uuid(),
-        category: "Atif Aslam",
+        artist_name: "Atif Aslam",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273261/musing_categories/artist4.jpg",
         description: "Best of atif aslam"
       },
       {
         _id: uuid(),
-        category: "Jubin Nautiyal",
+        artist_name: "Jubin Nautiyal",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273303/musing_categories/artist5.jpg",
         description: "Best of jubin nautiyal"
       },
       {
         _id: uuid(),
-        category: "K.K.",
+        artist_name: "K.K.",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273365/musing_categories/artist6.jpg",
         description: "Best of k.k."
       },
       {
         _id: uuid(),
-        category: "Lata Mangeshkar",
+        artist_name: "Lata Mangeshkar",
         img: "https://res.cloudinary.com/nj1508/image/upload/v1654273427/musing_categories/artist7.jpg",
         description: "Best of Lata Mangeshkar"
       }
