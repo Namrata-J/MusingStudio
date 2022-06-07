@@ -1,0 +1,71 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_safe-fallback-msg-component, .ms_single-videoCard-detail-page {
+    height: 100vh;
+}
+
+.ms_safe-fallback-msg-component {
+    background-color: var(--black);
+    background-image: url(https://wallpapers.com/images/high/minimalist-sadness-inside-out-5rh8iqkxdt42veya.jpg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 30rem;
+}
+
+.ms_safe-fallback-msg {
+    color: var(--gray-shade-three);
+    font-family: 'Gruppo', cursive;
+    font-size: 1.2rem;
+}
+
+.ms_safe-fallback-msg-component button {
+    background-color: transparent;
+    border: 1px solid var(--gray-shade-three);
+    color: var(--gray-shade-three);
+    font-family: 'Gruppo', cursive;
+    padding: 0.5rem 0.7rem;
+}
+
+.ms_safe-fallback-msg-component button:hover {
+    background: rgba(62, 62, 63, 0.5);
+}
+
+@media only screen and (max-width: 830px) {
+    .ms_safe-fallback-msg-component {
+        padding-right: 15rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .ms_safe-fallback-msg {
+        font-size: 1rem;
+    }
+
+    .ms_safe-fallback-msg-component {
+        padding: 0rem 5rem 15rem 2rem;
+    }
+
+    .ms_safe-fallback-msg-component button {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .ms_safe-fallback-msg {
+        font-size: 0.8rem;
+    }
+
+    .ms_safe-fallback-msg-component {
+        background-position: bottom;
+        padding: 0rem;
+    }
+
+    .ms_safe-fallback-msg-component button {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.5rem;
+    }
+}

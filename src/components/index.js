@@ -14,6 +14,8 @@ import { ChipsListingSection } from "./Chips/ChipsListingSection";
 import { Chip } from "./Chips/Chip";
 import { VideoCardListingSection } from "./VideoCard/VideoCardListingSection";
 import { VideoCard } from "./VideoCard/VideoCard";
+import { SingleVideoListing } from "./VideoPlayer/SingleVideoListing";
+import { SafeFallBack } from "./VideoPlayer/SafeFallBack";
 
 export {
     Header,
@@ -31,5 +33,7 @@ export {
     ChipsListingSection,
     Chip,
     VideoCardListingSection,
-    VideoCard
+    VideoCard,
+    SingleVideoListing,
+    SafeFallBack
 };
