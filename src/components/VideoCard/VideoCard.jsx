@@ -1,4 +1,5 @@
 import "./videoCard.css";
+import { Link } from "react-router-dom";
 import { BsFillPlayFill, BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoCard = (eachVideo) => {
@@ -6,9 +7,11 @@ const VideoCard = (eachVideo) => {
         <div className="ms_video-card ms_cp">
             <div className="ms_video-card-img-container">
                 <img src={eachVideo.music_img} className="ms_video-card-img b-rad1" />
-                <div className="ms_video-card-icon-container b-rad4">
-                    <BsFillPlayFill className="ms_vedio-card-play-icon" />
-                </div>
+                <Link to={`/videoDetail/${eachVideo._id}`} className="ms_video-card-play-icon-link">
+                    <div className="ms_video-card-icon-container b-rad4">
+                        <BsFillPlayFill className="ms_vedio-card-play-icon" />
+                    </div>
+                </Link>
                 <div className="ms_video-card-options-icon-container b-rad4">
                     <BiDotsVerticalRounded className="vedio-card-options-icon" />
                 </div>

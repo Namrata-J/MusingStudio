@@ -50,7 +50,11 @@
     right: 5%;
 }
 
-.ms_video-card-icon-container:hover,
+.ms_video-card-img-container:hover .ms_video-card-icon-container {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.ms_video-card-img-container:hover .ms_video-card-icon-container:hover,
 .ms_video-card-options-icon-container:hover {
     background: rgba(0, 0, 0, 1);
 }
@@ -60,10 +64,6 @@
     color: var(--white-color);
     font-size: 1.2rem;
     text-align: center;
-}
-
-.ms_video-card-img:hover+.ms_video-card-icon-container {
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .ms_vedio-card-title,

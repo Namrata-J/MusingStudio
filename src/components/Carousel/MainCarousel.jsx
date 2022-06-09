@@ -11,8 +11,8 @@ const HomePageCarousel = () => {
             {
                 msCategories.carouselImages.map(
                     (eachObj) => (
-                        <div className="ms_main-carousel-img-container">
-                            <img src={eachObj.img} key={eachObj._id} alt="image" />
+                        <div className="ms_main-carousel-img-container" key={eachObj._id}>
+                            <img src={eachObj.img} alt="image" />
                         </div>
                     ))
             }

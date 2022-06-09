@@ -7,6 +7,8 @@ import { WatchLaterPage } from "./watchLater/WatchLater";
 import { LogInPage } from "./Auth/LogIn";
 import { LogOutPage } from "./Auth/LogOut";
 import { SignUpPage } from "./Auth/SignUp";
+import { SingleVideoCardDetailPage } from "./singleVideoCardDetail/SingleVideoCardDetail";
+import { NoRouteMatchPage } from "./NoRouteMatch/NoRouteMatch";
 
 export {
     HistoryPage,
@@ -17,5 +19,7 @@ export {
     WatchLaterPage,
     LogInPage,
     LogOutPage,
-    SignUpPage
+    SignUpPage,
+    SingleVideoCardDetailPage,
+    NoRouteMatchPage
 };
