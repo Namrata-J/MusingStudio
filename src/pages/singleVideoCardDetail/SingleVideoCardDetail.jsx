@@ -22,7 +22,7 @@ const SingleVideoCardDetailPage = () => {
             }
         }
         findVedioDetail();
-    }, []);
+    }, [videoId]);
 
     return (
         <div className="ms_single-videoCard-detail-page page">
