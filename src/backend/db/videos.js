@@ -10,7 +10,7 @@ export const videos = [
     category_type: ["Bollywood love", "Recommended", "Feel-good", "Hindi hits"],
     music_title: "Pal",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654344114/ms_std/pal.jpg",
-    music_video: "https://music.youtube.com/watch?v=0uaE6BYAoWk&feature=share",
+    music_video: "https://tinyurl.com/yrp5s6vz",
     music_description: {
       release_date: "2018",
       singers: ["Arjit Singh", "Shreya Ghoshal"],
@@ -27,7 +27,7 @@ export const videos = [
     category_type: ["Bollywood love", "Recommended", "Feel-good", "Chai & Chill"],
     music_title: "Haareya",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654345457/ms_std/haareya.jpg",
-    music_video: "https://music.youtube.com/watch?v=TyMUY2CDrjc&feature=share",
+    music_video: "https://tinyurl.com/4jkhfpdu",
     music_description: {
       release_date: "2017",
       singers: ["Arjit Singh"],
@@ -44,7 +44,7 @@ export const videos = [
     category_type: ["Bollywood love", "Recommended", "Feel-good", "Hindi hits", "Chai & Chill"],
     music_title: "Rozana",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654345840/ms_std/rozana.jpg",
-    music_video: "https://music.youtube.com/watch?v=CtgD91Ev4NU&feature=share",
+    music_video: "https://tinyurl.com/5a5cwmfu",
     music_description: {
       release_date: "2017",
       singers: ["Shreya Ghoshal"],
@@ -61,13 +61,13 @@ export const videos = [
     category_type: ["Mix"],
     music_title: "Chill super mix",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654409124/ms_std/mix1.jpg",
-    music_video: "https://youtu.be/ibHT0g8Kyq4",
+    music_video: "https://tinyurl.com/3v29pfe7",
     music_description: {
-      release_date: "2020",
-      singers: ["Tommee Profitt", "Jawsh 685, Jason Derulo", "Tones and I", "Kygo, Sasha Sloan", "Tazzy", "Doja Cat", "Make You Mine", "Carlie Hanson", "Shawn Mendes"],
-      music_duration: "34:51",
-      lyrics_by: "",
-      composer: ""
+      release_date: "2021",
+      singers: ["Anonymous"],
+      music_duration: "7:24",
+      lyrics_by: "Anonymous",
+      composer: "Anonymous"
     },
     movie_name: "",
     likes: 985087,
@@ -78,7 +78,7 @@ export const videos = [
     category_type: ["Mix"],
     music_title: "Focus mix 01",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654409218/ms_std/mix01.jpg",
-    music_video: "https://youtu.be/knY_ZJvOz1I",
+    music_video: "https://tinyurl.com/2p97w45m",
     music_description: {
       release_date: "2022",
       singers: ["K.K"],
@@ -95,13 +95,13 @@ export const videos = [
     category_type: ["Mix"],
     music_title: "Energy mix 02",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654409262/ms_std/mix02.jpg",
-    music_video: "https://youtu.be/5dWMzzMlm9A",
+    music_video: "https://tinyurl.com/2xafv2wd",
     music_description: {
       release_date: "2021",
       singers: ["The Kid LAROI, Justin Bieber"],
       music_duration: "3:03",
-      lyrics_by: "",
-      composer: ""
+      lyrics_by: "Anonymous",
+      composer: "Anonymous"
     },
     movie_name: "Shershaah",
     likes: 875087,
@@ -112,13 +112,13 @@ export const videos = [
     category_type: ["Mix", "Lofi", "Punjabi hits"],
     music_title: "Lofi mix 03",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654409510/ms_std/mix03.jpg",
-    music_video: "https://youtu.be/OJaAXBEhXao",
+    music_video: "https://tinyurl.com/2mrfjrrv",
     music_description: {
       release_date: "2021",
       singers: ["AP DHILLON", "GARRY SANDHU", "HARNOOR", "AP DHILLON", "PropheC", "PAV DHARIA"],
       music_duration: "17:06",
-      lyrics_by: "",
-      composer: ""
+      lyrics_by: "Anonymous",
+      composer: "Anonymous"
     },
     movie_name: "",
     likes: 875887,
@@ -129,7 +129,7 @@ export const videos = [
     category_type: ["Mix"],
     music_title: "My mix 04",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654409361/ms_std/mix04.jpg",
-    music_video: "https://youtu.be/L3QnPNloqt8",
+    music_video: "https://tinyurl.com/2p88zc48",
     music_description: {
       release_date: "2021",
       singers: ["AP Dhillon ,Gurinder Gill x Ckay"],
@@ -146,7 +146,7 @@ export const videos = [
     category_type: ["Lofi"],
     music_title: "Be Intehaan - Lofi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654416262/ms_std/lofi1.jpg",
-    music_video: "https://music.youtube.com/watch?v=iWqz3GqMcC8&feature=share",
+    music_video: "https://tinyurl.com/5hcj7r2j",
     music_description: {
       release_date: "2021",
       singers: ["Atif Aslam", "Sunidhi Chauhan"],
@@ -163,7 +163,7 @@ export const videos = [
     category_type: ["Lofi"],
     music_title: "Waalian - Lofi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654416876/ms_std/lofi2.jpg",
-    music_video: "https://music.youtube.com/watch?v=dAFZS3gNY-A&feature=share",
+    music_video: "https://tinyurl.com/4j2dw64p",
     music_description: {
       release_date: "2021",
       singers: ["Harnoor"],
@@ -180,7 +180,7 @@ export const videos = [
     category_type: ["Lofi"],
     music_title: "Kaise Hua - Lofi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654417602/ms_std/lofi3.jpg",
-    music_video: "https://music.youtube.com/watch?v=2CJx9pMoGBI&feature=share",
+    music_video: "https://tinyurl.com/d3md3hkb",
     music_description: {
       release_date: "2020",
       singers: ["Vishal Mishra"],
@@ -197,7 +197,7 @@ export const videos = [
     category_type: ["Lofi"],
     music_title: "Dariya - Lofi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654417955/ms_std/lofi4.jpg",
-    music_video: "https://music.youtube.com/watch?v=7eQU8s3dwKM&feature=share",
+    music_video: "https://tinyurl.com/ye27eu22",
     music_description: {
       release_date: "2018",
       singers: ["Arco"],
@@ -214,7 +214,7 @@ export const videos = [
     category_type: ["Lofi"],
     music_title: "Darasal - Lofi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654418404/ms_std/lofi5.jpg",
-    music_video: "https://music.youtube.com/watch?v=sF_svUdsfwo&feature=share",
+    music_video: "https://tinyurl.com/z7p6zw85",
     music_description: {
       release_date: "2020",
       singers: ["Atif Aslam"],
@@ -231,7 +231,7 @@ export const videos = [
     category_type: ["Evergreen", "Old is Gold"],
     music_title: "Lag Ja Gale",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654423220/ms_std/eg1.jpg",
-    music_video: "https://music.youtube.com/watch?v=TFr6G5zveS8&feature=share",
+    music_video: "https://tinyurl.com/ccs3nuz",
     music_description: {
       release_date: "1964",
       singers: ["Lata Mangeshkar"],
@@ -248,7 +248,7 @@ export const videos = [
     category_type: ["Evergreen"],
     music_title: "Aoge Jab Tum",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654423474/ms_std/eg2.jpg",
-    music_video: "https://music.youtube.com/watch?v=WPwTPhFMm3k&feature=share",
+    music_video: "https://tinyurl.com/mw6jn7h4",
     music_description: {
       release_date: "2007",
       singers: ["Ustad Rashid Khan"],
@@ -265,7 +265,7 @@ export const videos = [
     category_type: ["Evergreen"],
     music_title: "Kabhi Kabhi Aditi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654423901/ms_std/eg3.jpg",
-    music_video: "https://music.youtube.com/watch?v=HIbzXaBdwZw&feature=share",
+    music_video: "https://tinyurl.com/5n6ub7es",
     music_description: {
       release_date: "2008",
       singers: ["Ustad Rashid Khan"],
@@ -282,7 +282,7 @@ export const videos = [
     category_type: ["Evergreen"],
     music_title: "Give Me Some Sunshine",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654424339/ms_std/eg4.jpg",
-    music_video: "https://music.youtube.com/watch?v=lbCRtrrMvSw&feature=share",
+    music_video: "https://tinyurl.com/39zbp4w7",
     music_description: {
       release_date: "2009",
       singers: ["Suraj Jagan", "Sharman Joshi"],
@@ -299,7 +299,7 @@ export const videos = [
     category_type: ["Evergreen"],
     music_title: "Aye Khuda",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654424653/ms_std/eg5.jpg",
-    music_video: "https://music.youtube.com/watch?v=T-g39o0rDos&feature=share",
+    music_video: "https://tinyurl.com/mw2hc78c",
     music_description: {
       release_date: "2010",
       singers: ["Salim Merchant"],
@@ -315,8 +315,8 @@ export const videos = [
     _id: uuid(),
     category_type: ["Evergreen"],
     music_title: "Mera mann kehne laga",
-    music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654424653/ms_std/eg5.jpg",
-    music_video: "https://music.youtube.com/watch?v=8kxufj_snhI&feature=share",
+    music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654676431/ms_std/eg01.jpg",
+    music_video: "https://tinyurl.com/2p842rc8",
     music_description: {
       release_date: "2013",
       singers: ["Falak Shabbir"],
@@ -333,7 +333,7 @@ export const videos = [
     category_type: ["Global Hits"],
     music_title: "Baby",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654425430/ms_std/gt1.jpg",
-    music_video: "https://music.youtube.com/watch?v=kffacxfA7G4&feature=share",
+    music_video: "https://tinyurl.com/yc7et6hd",
     music_description: {
       release_date: "2010",
       singers: ["Justin Bieber"],
@@ -350,7 +350,7 @@ export const videos = [
     category_type: ["Global Hits"],
     music_title: "Waka Waka",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654426038/ms_std/gt2.jpg",
-    music_video: "https://music.youtube.com/watch?v=pRpeEdMmmQ0&feature=share",
+    music_video: "https://tinyurl.com/2s48n8nc",
     music_description: {
       release_date: "2010",
       singers: ["Shakira"],
@@ -367,11 +367,11 @@ export const videos = [
     category_type: ["Global Hits"],
     music_title: "Bailando",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654426450/ms_std/gt3.jpg",
-    music_video: "https://music.youtube.com/watch?v=b8I-7Wk_Vbc&feature=share",
+    music_video: "https://tinyurl.com/yh4rdnmu",
     music_description: {
       release_date: "2014",
       singers: ["Enrique Iglesias"],
-      music_duration: "4:32",
+      music_duration: "4:46",
       lyrics_by: "Iglesias",
       composer: "Descemer Bueno"
     },
@@ -384,7 +384,7 @@ export const videos = [
     category_type: ["Global Hits"],
     music_title: "Broken Angel",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654426907/ms_std/gt4.jpg",
-    music_video: "https://music.youtube.com/watch?v=bC3WAxiLnDY&feature=share",
+    music_video: "https://tinyurl.com/4skcxvbv",
     music_description: {
       release_date: "2014",
       singers: ["Arash"],
@@ -401,7 +401,7 @@ export const videos = [
     category_type: ["Fresh Releases"],
     music_title: "Chaand Baaliyan",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654427444/ms_std/fr1.jpg",
-    music_video: "https://music.youtube.com/watch?v=Xi8Fabcb_MA&feature=share",
+    music_video: "https://tinyurl.com/kzb3ukwm",
     music_description: {
       release_date: "2020",
       singers: ["Aditya A"],
@@ -418,7 +418,7 @@ export const videos = [
     category_type: ["Fresh Releases"],
     music_title: "Baarishein",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654427869/ms_std/fr2.jpg",
-    music_video: "https://music.youtube.com/watch?v=PJWemSzExXs&feature=share",
+    music_video: "https://tinyurl.com/5c9e382k",
     music_description: {
       release_date: "2018",
       singers: ["Anuv Jain"],
@@ -435,7 +435,7 @@ export const videos = [
     category_type: ["Fresh Releases"],
     music_title: "Alag Aasmaan",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654428203/ms_std/fr3.jpg",
-    music_video: "https://music.youtube.com/watch?v=J3m3uptDf0Q&feature=share",
+    music_video: "https://tinyurl.com/ypbczya9",
     music_description: {
       release_date: "2020",
       singers: ["Anuv Jain"],
@@ -452,7 +452,7 @@ export const videos = [
     category_type: ["Fresh Releases"],
     music_title: "Wakt ki Baatein",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654428636/ms_std/fr4.jpg",
-    music_video: "https://music.youtube.com/watch?v=b-K4oDRk04M&feature=share",
+    music_video: "https://tinyurl.com/p7v4pbaj",
     music_description: {
       release_date: "2020",
       singers: ["Dream Note"],
@@ -469,7 +469,7 @@ export const videos = [
     category_type: ["Mood Boosters", "Bollywood love"],
     music_title: "Tu aake dekhle",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654428972/ms_std/mb1.jpg",
-    music_video: "https://music.youtube.com/watch?v=A66TYFdz8YA&feature=share",
+    music_video: "https://tinyurl.com/ycyet799",
     music_description: {
       release_date: "2020",
       singers: ["King"],
@@ -486,7 +486,7 @@ export const videos = [
     category_type: ["Mood Boosters"],
     music_title: "Ek raat",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654429249/ms_std/mb2.jpg",
-    music_video: "https://music.youtube.com/watch?v=oRZ0cfZ9SeU&feature=share",
+    music_video: "https://tinyurl.com/ywepr25b",
     music_description: {
       release_date: "2018",
       singers: ["Vilen"],
@@ -503,7 +503,7 @@ export const videos = [
     category_type: ["Mood Boosters"],
     music_title: "Tera ghata",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654429688/ms_std/mb3.jpg",
-    music_video: "https://music.youtube.com/watch?v=0KNk-Joi-NM&feature=share",
+    music_video: "https://tinyurl.com/bdzz8p56",
     music_description: {
       release_date: "2018",
       singers: ["Gajendra Verma"],
@@ -520,7 +520,7 @@ export const videos = [
     category_type: ["Mood Boosters", "Bollywood love"],
     music_title: "Ranjha",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654429976/ms_std/mb4.jpg",
-    music_video: "https://music.youtube.com/watch?v=tC1L9qjOzXs&feature=share",
+    music_video: "https://tinyurl.com/yckwwzea",
     music_description: {
       release_date: "2021",
       singers: ["B Praak", "Jasleen Royal"],
@@ -537,7 +537,7 @@ export const videos = [
     category_type: ["Recommended"],
     music_title: "Libaas",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654430559/ms_std/rc1.jpg",
-    music_video: "https://music.youtube.com/watch?v=V5En3Ks3OjE&feature=share",
+    music_video: "https://tinyurl.com/2txjm9hd",
     music_description: {
       release_date: "2020",
       singers: ["Kaka"],
@@ -554,7 +554,7 @@ export const videos = [
     category_type: ["Recommended"],
     music_title: "Insane",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654432380/ms_std/rc2.jpg",
-    music_video: "https://music.youtube.com/watch?v=cqP8I5aaud8&feature=share",
+    music_video: "https://tinyurl.com/2um6ykas",
     music_description: {
       release_date: "2021",
       singers: ["Gurinder Gill", "Shinda Kahlon", "Gminxr", "AP Dhillon"],
@@ -571,7 +571,7 @@ export const videos = [
     category_type: ["Recommended", "Bollywood love"],
     music_title: "Tujhe Kitna Chahne Lage Hum",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654432583/ms_std/rc3.jpg",
-    music_video: "https://music.youtube.com/watch?v=AgX2II9si7w&feature=share",
+    music_video: "https://tinyurl.com/yc6assjt",
     music_description: {
       release_date: "2021",
       singers: ["Mithoon", "Arjit Singh"],
@@ -588,7 +588,7 @@ export const videos = [
     category_type: ["Recommended", "Bollywood love"],
     music_title: "Channa Mereya",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654432797/ms_std/rc4.jpg",
-    music_video: "https://music.youtube.com/watch?v=284Ov7ysmfA&feature=share",
+    music_video: "https://tinyurl.com/yk4m7zsc",
     music_description: {
       release_date: "2016",
       singers: ["Arjit Singh"],
@@ -605,7 +605,7 @@ export const videos = [
     category_type: ["Bollywood love"],
     music_title: "Senorita",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654434115/ms_std/bl1.jpg",
-    music_video: "https://music.youtube.com/watch?v=yDv0WSgXJVg&feature=share",
+    music_video: "https://tinyurl.com/bdep9k5k",
     music_description: {
       release_date: "2011",
       singers: ["María del Mar Fernández", "Hrithik Roshan", "Abhay Singh Deol", "Farhan Akhtar"],
@@ -622,7 +622,7 @@ export const videos = [
     category_type: ["Bollywood love"],
     music_title: "Tum Hi Ho Bandhu",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654434508/ms_std/bl2.jpg",
-    music_video: "https://music.youtube.com/watch?v=o1RducJbUdc&feature=share",
+    music_video: "https://tinyurl.com/yc6f883s",
     music_description: {
       release_date: "2012",
       singers: ["Neeraj Sridhar", "Kavita Seth"],
@@ -639,7 +639,7 @@ export const videos = [
     category_type: ["Bollywood love"],
     music_title: "Hookah Bar",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654434970/ms_std/bl3.jpg",
-    music_video: "https://music.youtube.com/watch?v=b4b1cMVZOUU&feature=share",
+    music_video: "https://tinyurl.com/3p4742da",
     music_description: {
       release_date: "2012",
       singers: ["Vinit Singh", "Himesh Reshammiya", "Aaman Trikha"],
@@ -656,7 +656,7 @@ export const videos = [
     category_type: ["Chai & Chill"],
     music_title: "Mere Bina",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654435386/ms_std/cc1.jpg",
-    music_video: "https://music.youtube.com/watch?v=XvUSsh3gdO4&feature=share",
+    music_video: "https://tinyurl.com/yc5887zr",
     music_description: {
       release_date: "2010",
       singers: ["Nikil D'Souza"],
@@ -673,7 +673,7 @@ export const videos = [
     category_type: ["Chai & Chill"],
     music_title: "Voh Dekhnay Mein",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654435691/ms_std/cc2.jpg",
-    music_video: "https://music.youtube.com/watch?v=nD1jhw6F-J4&feature=share",
+    music_video: "https://tinyurl.com/bdfbd5pm",
     music_description: {
       release_date: "2012",
       singers: ["Ali Zafar"],
@@ -690,7 +690,7 @@ export const videos = [
     category_type: ["Chai & Chill"],
     music_title: "Saansein",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654436817/ms_std/cc3.jpg",
-    music_video: "https://music.youtube.com/watch?v=R3Ed4zvQ0Hs&feature=share",
+    music_video: "https://tinyurl.com/ms85385d",
     music_description: {
       release_date: "2018",
       singers: ["Prateek Kuhad"],
@@ -707,7 +707,7 @@ export const videos = [
     category_type: ["Chai & Chill"],
     music_title: "Kadam",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654436817/ms_std/cc3.jpg",
-    music_video: "https://music.youtube.com/watch?v=C1oj-lK0Ecc&feature=share",
+    music_video: "https://tinyurl.com/3xrs9dd9",
     music_description: {
       release_date: "2018",
       singers: ["Prateek Kuhad"],
@@ -724,7 +724,7 @@ export const videos = [
     category_type: ["Chai & Chill"],
     music_title: "Kho Gaye Hum Kahan",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654437113/ms_std/cc4.jpg",
-    music_video: "https://music.youtube.com/watch?v=vt4jX0iRgCg&feature=share",
+    music_video: "https://tinyurl.com/3buymcxv",
     music_description: {
       release_date: "2018",
       singers: ["Jasleen Royal", "Prateek Kuhad"],
@@ -741,7 +741,7 @@ export const videos = [
     category_type: ["Indian essentials"],
     music_title: "Hothon Se Chhu Lo Tum",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654438708/ms_std/ie1.jpg",
-    music_video: "https://music.youtube.com/watch?v=dDO9ZRSNB9s&feature=share",
+    music_video: "https://tinyurl.com/bdfcjdmx",
     music_description: {
       release_date: "1981",
       singers: ["Jagjit Singh"],
@@ -758,7 +758,7 @@ export const videos = [
     category_type: ["Indian essentials"],
     music_title: "Koi Fariyaad",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654439087/ms_std/ie2.jpg",
-    music_video: "https://music.youtube.com/watch?v=8MN2bxMiB9A&feature=share",
+    music_video: "https://tinyurl.com/y595kmky",
     music_description: {
       release_date: "2001",
       singers: ["Jagjit Singh"],
@@ -775,7 +775,7 @@ export const videos = [
     category_type: ["Indian essentials"],
     music_title: "Jogi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654439318/ms_std/ie3.jpg",
-    music_video: "https://music.youtube.com/watch?v=EnTjvcd3BCU&feature=share",
+    music_video: "https://tinyurl.com/pbmz2wna",
     music_description: {
       release_date: "2017",
       singers: ["Yaseer Desai", "Akanksha Sharma"],
@@ -792,7 +792,7 @@ export const videos = [
     category_type: ["Indian essentials"],
     music_title: "O Re Piya",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654439585/ms_std/ie4.jpg",
-    music_video: "https://music.youtube.com/watch?v=iv7lcUkFVSc&feature=share",
+    music_video: "https://tinyurl.com/42u6kf3p",
     music_description: {
       release_date: "2007",
       singers: ["Yaseer Desai", "Akanksha Sharma"],
@@ -809,7 +809,7 @@ export const videos = [
     category_type: ["Feel-good"],
     music_title: "Let Her Go",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654441711/ms_std/fg1.jpg",
-    music_video: "https://music.youtube.com/watch?v=V2a-sl4l3_4&feature=share",
+    music_video: "hhttps://tinyurl.com/3yafyk9k",
     music_description: {
       release_date: "2012",
       singers: ["Andrew Foy", "Renee Foy"],
@@ -826,7 +826,7 @@ export const videos = [
     category_type: ["Feel-good"],
     music_title: "Night Changes",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654442053/ms_std/fg2.jpg",
-    music_video: "https://music.youtube.com/watch?v=syFZfO_wfMQ&feature=share",
+    music_video: "https://tinyurl.com/44x3rn9f",
     music_description: {
       release_date: "2019",
       singers: ["One Direction"],
@@ -843,7 +843,7 @@ export const videos = [
     category_type: ["Feel-good"],
     music_title: "At My Worst",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654442272/ms_std/fg3.jpg",
-    music_video: "https://music.youtube.com/watch?v=i8fa3JIrgpY&feature=share",
+    music_video: "https://tinyurl.com/yce7vemy",
     music_description: {
       release_date: "2020",
       singers: ["Andrew Foy", "Renee Foy"],
@@ -860,7 +860,7 @@ export const videos = [
     category_type: ["Feel-good"],
     music_title: "At My Worst",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654442493/ms_std/fg4.jpg",
-    music_video: "https://music.youtube.com/watch?v=8CEJoCr_9UI&feature=share",
+    music_video: "https://tinyurl.com/bdd2st8n",
     music_description: {
       release_date: "2014",
       singers: ["Pink Sweat$"],
@@ -877,7 +877,7 @@ export const videos = [
     category_type: ["Hindi hits"],
     music_title: "Duniya",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654442693/ms_std/hh1.jpg",
-    music_video: "https://music.youtube.com/watch?v=hVCYwwFwGEE&feature=share",
+    music_video: "https://tinyurl.com/yj37k66r",
     music_description: {
       release_date: "2019",
       singers: ["Akhil & Dhvani Bhanushali"],
@@ -894,7 +894,7 @@ export const videos = [
     category_type: ["Hindi hits"],
     music_title: "Photo",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654442943/ms_std/hh2.jpg",
-    music_video: "https://music.youtube.com/watch?v=6fBz-GMMhzg&feature=share",
+    music_video: "https://tinyurl.com/285fm65p",
     music_description: {
       release_date: "2019",
       singers: ["Karan Sehmbi"],
@@ -911,7 +911,7 @@ export const videos = [
     category_type: ["Hindi hits"],
     music_title: "O Sathi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654443277/ms_std/hh3.jpg",
-    music_video: "https://music.youtube.com/watch?v=OX-h7MtkeOI&feature=share",
+    music_video: "https://tinyurl.com/2vywprym",
     music_description: {
       release_date: "2018",
       singers: ["Atif Aslam"],
@@ -928,7 +928,7 @@ export const videos = [
     category_type: ["Indian folk hits"],
     music_title: "Zaroori Tha",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654443875/ms_std/ifh1.jpg",
-    music_video: "https://music.youtube.com/watch?v=6-n_szx2XRE&feature=share",
+    music_video: "https://tinyurl.com/4zxmbj8u",
     music_description: {
       release_date: "2014",
       singers: ["Rahat Fateh Ali Khan"],
@@ -945,7 +945,7 @@ export const videos = [
     category_type: ["Punjabi hits"],
     music_title: "Sohnea",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654444182/ms_std/ph1.jpg",
-    music_video: "https://music.youtube.com/watch?v=srl0cnKzGIw&feature=share",
+    music_video: "https://tinyurl.com/bdfv9sve",
     music_description: {
       release_date: "2017",
       singers: ["Millind Gaba", "Miss Pooja"],
@@ -962,7 +962,7 @@ export const videos = [
     category_type: ["Punjabi hits"],
     music_title: "Daru Badnaam",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654444630/ms_std/ph2.jpg",
-    music_video: "https://music.youtube.com/watch?v=bzW9fmwcmG4&feature=share",
+    music_video: "https://tinyurl.com/mpbuy4vt",
     music_description: {
       release_date: "2016",
       singers: ["Kamal Kahlon", "Param Singh"],
@@ -979,7 +979,7 @@ export const videos = [
     category_type: ["Punjabi hits"],
     music_title: "Nira Ishq",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654444591/ms_std/ph3.jpg",
-    music_video: "https://music.youtube.com/watch?v=VO7Vu207-e8&feature=share",
+    music_video: "https://tinyurl.com/4a48nkz7",
     music_description: {
       release_date: "2019",
       singers: ["Guri"],
@@ -996,7 +996,7 @@ export const videos = [
     category_type: ["Coke studio"],
     music_title: "Pasoori",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654445597/ms_std/cs1.jpg",
-    music_video: "https://music.youtube.com/watch?v=5Eqb_-j3FDA&feature=share",
+    music_video: "https://tinyurl.com/4bymz6r3",
     music_description: {
       release_date: "2022",
       singers: ["Shae Gill", "Ali Sethi"],
@@ -1013,7 +1013,7 @@ export const videos = [
     category_type: ["Coke studio"],
     music_title: "Afreen Afreen",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654445768/ms_std/cs2.jpg",
-    music_video: "https://music.youtube.com/watch?v=kw4tT7SCmaY&feature=share",
+    music_video: "https://tinyurl.com/43ctvh3t",
     music_description: {
       release_date: "2018",
       singers: ["Rahat Fateh Ali Khan", "Momina Mustehsan"],
@@ -1030,7 +1030,7 @@ export const videos = [
     category_type: ["Coke studio"],
     music_title: "Agar tum sath ho - Maahi ve",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654446031/ms_std/cs3.jpg",
-    music_video: "https://music.youtube.com/watch?v=Q2S7CDuBTOc&feature=share",
+    music_video: "https://tinyurl.com/43ctvh3t",
     music_description: {
       release_date: "2018",
       singers: ["Jubin Nautiyal"],
@@ -1047,7 +1047,7 @@ export const videos = [
     category_type: ["Trending"],
     music_title: "Vaaste",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654447140/ms_std/t1.jpg",
-    music_video: "https://music.youtube.com/watch?v=BBAyRBTfsOU&feature=share",
+    music_video: "https://tinyurl.com/yc9cb6j8",
     music_description: {
       release_date: "2019",
       singers: ["Nikhil D'Souza", "Dhvani Bhanushali"],
@@ -1064,7 +1064,7 @@ export const videos = [
     category_type: ["Trending"],
     music_title: "Ban Ja Rani",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654447306/ms_std/t2.jpg",
-    music_video: "https://music.youtube.com/watch?v=Lx4ESwFT9mk&feature=share",
+    music_video: "https://tinyurl.com/yt9pkssr",
     music_description: {
       release_date: "2019",
       singers: ["Guru Randhawa"],
@@ -1081,7 +1081,7 @@ export const videos = [
     category_type: ["Old is Gold"],
     music_title: "Kisi Ki Muskurahaton Se",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654447759/ms_std/o1.jpg",
-    music_video: "https://music.youtube.com/watch?v=69pPYkGiEAQ&feature=share",
+    music_video: "https://tinyurl.com/2p897a47",
     music_description: {
       release_date: "1958",
       singers: ["Mukesh"],
@@ -1098,7 +1098,7 @@ export const videos = [
     category_type: ["Old is Gold"],
     music_title: "O Mere Dil Ke Chain",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654448036/ms_std/o2.jpg",
-    music_video: "https://music.youtube.com/watch?v=pCt3by5Wx5k&feature=share",
+    music_video: "https://tinyurl.com/48cfypw3",
     music_description: {
       release_date: "1958",
       singers: ["Kishore Kumar"],
@@ -1115,7 +1115,7 @@ export const videos = [
     category_type: ["Old is Gold"],
     music_title: "Tujhse Naraz Nahi Zindagi",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654448572/ms_std/o4.jpg",
-    music_video: "https://music.youtube.com/watch?v=9u-DCn0wDVI&feature=share",
+    music_video: "https://tinyurl.com/5csxvpbk",
     music_description: {
       release_date: "1960",
       singers: ["Lata Mangeshkar"],
@@ -1132,7 +1132,7 @@ export const videos = [
     category_type: ["Hindi hits"],
     music_title: "Galliyan",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654449047/ms_std/a1.jpg",
-    music_video: "https://music.youtube.com/watch?v=FxAG_11PzCk&feature=share",
+    music_video: "https://tinyurl.com/ycye9deb",
     music_description: {
       release_date: "2014",
       singers: ["Ankit Tiwari"],
@@ -1149,7 +1149,7 @@ export const videos = [
     category_type: ["Cardio"],
     music_title: "Wishlist",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654449358/ms_std/a2.jpg",
-    music_video: "https://music.youtube.com/watch?v=hFGG7T3Mq3w&feature=share",
+    music_video: "https://tinyurl.com/2p8h2xhp",
     music_description: {
       release_date: "2020",
       singers: ["Dino James"],
@@ -1166,7 +1166,7 @@ export const videos = [
     category_type: ["Cardio"],
     music_title: "Dooriyan",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654449572/ms_std/a3.jpg",
-    music_video: "https://music.youtube.com/watch?v=sLykke8q2ls&feature=share",
+    music_video: "https://tinyurl.com/mryjchjb",
     music_description: {
       release_date: "2020",
       singers: ["Dino James"],
@@ -1183,7 +1183,7 @@ export const videos = [
     category_type: ["Bollywood love"],
     music_title: "Ajab Si",
     music_img: "https://res.cloudinary.com/nj1508/image/upload/t_ms_collection/v1654451054/ms_std/a4.jpg",
-    music_video: "https://music.youtube.com/watch?v=pA2D5H4ufYo&feature=share",
+    music_video: "https://tinyurl.com/4xmwfxfz",
     music_description: {
       release_date: "2007",
       singers: ["K.K."],
