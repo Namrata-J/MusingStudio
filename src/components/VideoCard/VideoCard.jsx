@@ -7,7 +7,7 @@ const VideoCard = (eachVideo) => {
         <div className="ms_video-card ms_cp">
             <div className="ms_video-card-img-container">
                 <img src={eachVideo.music_img} className="ms_video-card-img b-rad1" />
-                <Link to={`/videoDetail/${eachVideo._id}`}>
+                <Link to={`/videoDetail/${eachVideo._id}`} className="ms_video-card-play-icon-link">
                     <div className="ms_video-card-icon-container b-rad4">
                         <BsFillPlayFill className="ms_vedio-card-play-icon" />
                     </div>
