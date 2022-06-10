@@ -9,9 +9,9 @@ const ChipsListingSection = () => {
     return (
         <div className="ms_chips-listing-section">
             <div className="ms_chips-container">
-                <label htmlFor="ms_show-all" className="b-rad1 ms_cp">
+                <div className="ms_chip b-rad1 ms_cp">
                     All
-                </label>
+                </div>
                 {
                     msCategories.musicGenres.map((genre, index) => (
                         <Chip {...genre} key={index} />
