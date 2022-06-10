@@ -127,6 +127,7 @@
 .ms_profile-popUp-container,
 .ms_search-popUp-container {
     position: absolute;
+    z-index: 1;
 }
 
 .ms_profile-popUp-container ul {
