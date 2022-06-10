@@ -21,6 +21,7 @@ import { VedioPlayerMainInfo } from "./VideoPlayer/VpMainInfo";
 import { VideoPlayerMetaInfo } from "./VideoPlayer/VpMetaInfo";
 import { VideoRecommendation } from "./VideoPlayer/VideoRecommendation";
 import { NoResultsFoundComp } from "./VideoCard/NoResultFound";
+import { RequiresAuth } from "./RequiresAuth/RequiresAuth";
 
 export {
     Header,
@@ -45,5 +46,6 @@ export {
     VedioPlayerMainInfo,
     VideoPlayerMetaInfo,
     VideoRecommendation,
-    NoResultsFoundComp
+    NoResultsFoundComp,
+    RequiresAuth
 };

@@ -1,6 +1,11 @@
 @import url(../../utils/base.css);
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
+.ms_auth-page {
+    flex-direction: column;
+    position: relative;
+}
+
 .ms_auth-container {
     background-color: rgba(22, 40, 58, 0.37);
     padding: 0.5rem 2rem;
@@ -35,7 +40,8 @@
 .ms_auth-navigationToOtherAuth,
 .ms_auth-guestLogIn,
 .ms_logOut-container-text,
-.ms_logOut-container-action-btns button {
+.ms_logOut-container-action-btns button,
+.ms_auth-err-msg {
     font-family: 'Gruppo', cursive;
 }
 
@@ -94,6 +100,12 @@
     padding: 0.5rem 1.5rem;
 }
 
+.ms_auth-err-msg {
+    color: var(--light-red);
+    position: absolute;
+    top: 10%;
+}
+
 @media only screen and (max-width: 400px) {
     .ms_auth-container {
         width: 17rem;
@@ -106,5 +118,9 @@
 
     .ms_logOut-container-action-btns button {
         padding: 0.4rem 1rem;
+    }
+
+    .ms_auth-err-msg {
+        font-size: 0.9rem;
     }
 }
