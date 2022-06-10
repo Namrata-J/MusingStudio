@@ -20,6 +20,7 @@ import { VideoPlayer } from "./VideoPlayer/VideoPlayer";
 import { VedioPlayerMainInfo } from "./VideoPlayer/VpMainInfo";
 import { VideoPlayerMetaInfo } from "./VideoPlayer/VpMetaInfo";
 import { VideoRecommendation } from "./VideoPlayer/VideoRecommendation";
+import { NoResultsFoundComp } from "./VideoCard/NoResultFound";
 
 export {
     Header,
@@ -43,5 +44,6 @@ export {
     VideoPlayer,
     VedioPlayerMainInfo,
     VideoPlayerMetaInfo,
-    VideoRecommendation
+    VideoRecommendation,
+    NoResultsFoundComp
 };

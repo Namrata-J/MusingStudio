@@ -1,15 +1,16 @@
 import "./videoCard.css";
-import { useVideo } from "../../contexts/";
-import { VideoCard } from "../";
+import { VideoCard, NoResultsFoundComp } from "../";
+import { useFilter } from "../../contexts/";
 
 const VideoCardListingSection = () => {
 
-    const { msVideos } = useVideo();
+    const { filteredVideosToBeShown } = useFilter();
 
     return (
         <div className="ms_videoCard-listing-section ms_flex">
             {
-                msVideos?.map((eachVideo) => (
+                filteredVideosToBeShown?.length === 0 ? <NoResultsFoundComp /> :
+                filteredVideosToBeShown?.map((eachVideo) => (
                    <VideoCard {...eachVideo} key={eachVideo._id}/> 
                 ))
             }

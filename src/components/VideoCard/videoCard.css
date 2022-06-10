@@ -14,6 +14,7 @@
     width: 11rem;
 }
 
+.ms_no-results-found-component,
 .ms_video-card-img-container,
 .ms_video-card-detail {
     width: 100%;
@@ -66,6 +67,7 @@
     text-align: center;
 }
 
+.ms_nrf-msg,
 .ms_vedio-card-title,
 .ms_vedio-card-subtitle {
     color: var(--white-color);
@@ -85,6 +87,11 @@
 .ms_vedio-card-title:hover {
     color: var(--gray-shade-three);
     text-decoration: underline;
+}
+
+.ms_nrf-msg {
+    color: var(--gray-shade-three);
+    font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 835px) {
@@ -137,6 +144,10 @@
     .vedio-card-options-icon {
         font-size: 0.9rem;
     }
+
+    .ms_nrf-msg {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -168,6 +179,10 @@
 
     .ms_vedio-card-music-duration {
         font-size: 0.6rem;
+    }
+
+    .ms_nrf-msg {
+        font-size: 0.9rem;
     }
 }
 

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import { HeaderProvider, CategoryProvider, VideoProvider } from "./contexts/";
+import { HeaderProvider, CategoryProvider, VideoProvider, FilterProvider } from "./contexts/";
 
 // Call make Server
 makeServer();
@@ -14,7 +14,9 @@ ReactDOM.render(
       <VideoProvider>
         <CategoryProvider>
           <HeaderProvider>
-            <App />
+            <FilterProvider>
+              <App />
+            </FilterProvider>
           </HeaderProvider>
         </CategoryProvider>
       </VideoProvider>

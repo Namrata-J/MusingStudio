@@ -290,11 +290,16 @@ p.ms_recommended-video-duration {
 
     .ms_vedio-player-meta-info p,
     .ms_vedio-player-meta-info span {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .ms_other-video-recommendations {
         margin-top: -8rem;
+    }
+
+    p.ms_recommended-video-title,
+    p.ms_recommended-video-duration {
+        font-size: 0.7rem;
     }
 }
 
