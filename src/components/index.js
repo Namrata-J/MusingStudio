@@ -22,6 +22,8 @@ import { VideoPlayerMetaInfo } from "./VideoPlayer/VpMetaInfo";
 import { VideoRecommendation } from "./VideoPlayer/VideoRecommendation";
 import { NoResultsFoundComp } from "./VideoCard/NoResultFound";
 import { RequiresAuth } from "./RequiresAuth/RequiresAuth";
+import { LikedVideosListing } from "./PrivateRouteVideos/LikedVideosListing";
+import { PrivateRouteCard } from "./PrivateRouteVideos/PrivateRouteCard";
 
 export {
     Header,
@@ -47,5 +49,7 @@ export {
     VideoPlayerMetaInfo,
     VideoRecommendation,
     NoResultsFoundComp,
-    RequiresAuth
+    RequiresAuth,
+    LikedVideosListing,
+    PrivateRouteCard
 };

@@ -34,7 +34,8 @@
 }
 
 .ms_video-card-icon-container,
-.ms_video-card-options-icon-container {
+.ms_video-card-options-icon-container,
+.ms_video-card-options-popup {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
 }
@@ -60,31 +61,31 @@
     background: rgba(0, 0, 0, 1);
 }
 
-.ms_vedio-card-play-icon,
-.vedio-card-options-icon {
+.ms_video-card-play-icon,
+.ms_video-card-options-icon {
     color: var(--white-color);
     font-size: 1.2rem;
     text-align: center;
 }
 
 .ms_nrf-msg,
-.ms_vedio-card-title,
-.ms_vedio-card-subtitle {
+.ms_video-card-title,
+.ms_video-card-subtitle {
     color: var(--white-color);
     font-family: 'Gruppo', cursive;
 }
 
-.ms_vedio-card-subtitle,
-.ms_vedio-card-music-duration {
+.ms_video-card-subtitle,
+.ms_video-card-music-duration {
     color: var(--gray-shade-three);
     font-size: 0.9rem;
 }
 
-.ms_vedio-card-subtitle {
+.ms_video-card-subtitle {
     justify-content: space-between;
 }
 
-.ms_vedio-card-title:hover {
+.ms_video-card-title:hover {
     color: var(--gray-shade-three);
     text-decoration: underline;
 }
@@ -92,6 +93,40 @@
 .ms_nrf-msg {
     color: var(--gray-shade-three);
     font-size: 1.2rem;
+}
+
+.ms_video-card-options-popup {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px 0px var(--gray-shade-two);
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    gap: 0.5rem;
+    top: 35px;
+    right: 0px;
+    z-index: 0;
+}
+
+.ms_video-card-option {
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.ms_video-card-options-popUp-container-icon {
+    padding-top: 2px;
+}
+
+.ms_video-card-option:hover {
+    text-decoration: underline;
+}
+
+.ms_video-card-option:hover,
+.ms_video-card-option span  {
+    color: var(--gray-shade-three);
+}
+
+.ms_video-card-option span {
+    font-size: 0.7rem;
+    white-space: nowrap;
 }
 
 @media only screen and (max-width: 835px) {
@@ -105,12 +140,12 @@
         width: 9rem;
     }
 
-    .ms_vedio-card-title {
+    .ms_video-card-title {
         font-size: 0.8rem;
         padding: 0.2rem 0rem;
     }
 
-    .ms_vedio-card-music-duration {
+    .ms_video-card-music-duration {
         font-size: 0.7rem;
     }
 
@@ -118,9 +153,24 @@
         top: 70%;
     }
 
-    .ms_vedio-card-play-icon,
-    .vedio-card-options-icon {
+    .ms_video-card-play-icon,
+    .ms_video-card-options-icon {
         font-size: 1rem;
+    }
+
+    .ms_video-card-option {
+        gap: 3px;
+    }
+
+    .ms_video-card-options-popup {
+        padding: 0.5rem 0.4rem 0.4rem 0.4rem;
+        gap: 0.3rem;
+        top: 27px;
+        right: -7px;
+    }
+
+    .ms_video-card-option span {
+        font-size: 0.5rem;
     }
 }
 
@@ -140,8 +190,8 @@
         width: 7rem;
     }
 
-    .ms_vedio-card-play-icon,
-    .vedio-card-options-icon {
+    .ms_video-card-play-icon,
+    .ms_video-card-options-icon {
         font-size: 0.9rem;
     }
 
@@ -155,8 +205,8 @@
         width: 6rem;
     }
 
-    .ms_vedio-card-play-icon,
-    .vedio-card-options-icon {
+    .ms_video-card-play-icon,
+    .ms_video-card-options-icon {
         font-size: 0.7rem;
     }
 
@@ -169,15 +219,15 @@
         padding: 0.2rem 0.4rem 0.1rem 0.4rem;
     }
 
-    .ms_vedio-card-title {
+    .ms_video-card-title {
         font-size: 0.7rem;
     }
 
-    .ms_vedio-card-subtitle {
+    .ms_video-card-subtitle {
         font-size: 0.7rem;
     }
 
-    .ms_vedio-card-music-duration {
+    .ms_video-card-music-duration {
         font-size: 0.6rem;
     }
 

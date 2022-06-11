@@ -1,5 +1,5 @@
 import "./likedVideos.css";
-import { Header, SideBar } from "../../components";
+import { Header, SideBar, LikedVideosListing } from "../../components";
 
 const LikedVideosPage = () => {
     return (
@@ -9,6 +9,10 @@ const LikedVideosPage = () => {
             </div>
             <div className="ms_likedVideospage-main-section ms_flex">
                 <SideBar />
+                <div className="ms_likedVideospage-content-section content-section ms_flex">
+                    <h4 className="ms_fw-b">Liked Videos</h4>
+                    <LikedVideosListing />
+                </div>
             </div>
         </div>
     );
