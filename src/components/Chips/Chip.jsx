@@ -1,17 +1,21 @@
 import "./chips.css";
-import { useFilter } from "../../contexts/";
+import { useFilter, useVideoCard } from "../../contexts/";
 
 const Chip = (genre) => {
 
     const { stateOfVideosFilter, dispatchOfVideosFilter } = useFilter();
+    const { setVideoIdOfCard } = useVideoCard();
 
     return (
         <div className="ms_chip b-rad1 ms_cp"
             onClick={
-                () => dispatchOfVideosFilter({
-                    type: genre.category ? "FILTER_BY_CATEGORY" : "FILTER_BY_ARTIST",
-                    payload: genre.category ? genre.category : genre.artist_name
-                })}
+                () => {
+                    setVideoIdOfCard("");
+                    dispatchOfVideosFilter({
+                        type: genre.category ? "FILTER_BY_CATEGORY" : "FILTER_BY_ARTIST",
+                        payload: genre.category ? genre.category : genre.artist_name
+                    })
+                }}
             style={{
                 backgroundColor: genre.category ?
                     stateOfVideosFilter.filteredCategories.includes(genre.category) ? "var(--action)" : "transparent" :

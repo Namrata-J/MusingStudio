@@ -24,7 +24,8 @@ const VideoCard = (eachVideo) => {
                 </Link>
                 <div
                     className="ms_video-card-options-icon-container b-rad4"
-                    onClick={() => {
+                    onClick={(e) => {
+                        e.stopPropagation();
                         eachVideo._id === videoIdOfCard ?
                             setVideoIdOfCard("") : setVideoIdOfCard(eachVideo._id)
                     }}>
