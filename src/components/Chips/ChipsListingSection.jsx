@@ -12,12 +12,11 @@ const ChipsListingSection = () => {
             <div className="ms_chips-container">
                 <div className="ms_chip b-rad1 ms_cp"
                     onClick={() => dispatchOfVideosFilter({ type: "CLEAR" })}
-                    style={{
-                        backgroundColor: stateOfVideosFilter.filteredCategories.length === 0 && stateOfVideosFilter.filteredArtists.length === 0 ?
-                            "var(--action)" : "transparent",
-                        color: stateOfVideosFilter.filteredCategories.length === 0 && stateOfVideosFilter.filteredArtists.length === 0 ?
-                            "var(--white-color)" : "var(--action)"
-                    }}>
+                    style={
+                        stateOfVideosFilter.filteredCategories.length === 0 && stateOfVideosFilter.filteredArtists.length === 0 ?
+                            { backgroundColor: "var(--action)", color: "var(--white-color)" } :
+                            { backgroundColor: "transparent", color: "var(--action)" }
+                    }>
                     All
                 </div>
                 {
