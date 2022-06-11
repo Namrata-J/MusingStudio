@@ -19,11 +19,6 @@
     margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
-.ms_chip:hover {
-    background-color: var(--action);
-    color: var(--white-color);
-}
-
 @media only screen and (max-width: 750px) {
     .ms_chip {
         font-size: 0.9rem;

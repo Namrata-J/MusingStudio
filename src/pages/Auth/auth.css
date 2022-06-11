@@ -1,0 +1,126 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_auth-page {
+    flex-direction: column;
+    position: relative;
+}
+
+.ms_auth-container {
+    background-color: rgba(22, 40, 58, 0.37);
+    padding: 0.5rem 2rem;
+    width: 20rem;
+}
+
+.ms_auth-container h4 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ms_auth-container h4,
+.ms_auth-navigationToOtherAuth {
+    text-align: center;
+}
+
+.ms_auth-form {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ms_authForm-label,
+.ms_auth-container h4,
+.ms_logOut-container-text {
+    color: var(--gray-shade-three);
+}
+
+.ms_authForm-label,
+.ms_auth-container h4,
+.ms_authFormInput,
+.ms_auth-submit-button,
+.ms_auth-navigationToOtherAuth,
+.ms_auth-guestLogIn,
+.ms_logOut-container-text,
+.ms_logOut-container-action-btns button,
+.ms_auth-err-msg {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_authForm-label {
+    font-size: 0.9rem;
+    padding-bottom: 4px;
+}
+
+.ms_authFormInput {
+    background-color: rgb(15, 15, 15);
+    border: 1px solid var(--gray-shade-three);
+    color: var(--gray-shade-three);
+    padding: 5px 8px;
+    margin-bottom: 0.5rem;
+}
+
+.ms_auth-submit-button,
+.ms_auth-guestLogIn,
+.ms_logOut-container-action-btns button{
+    background-color: transparent;
+    border: 1px solid var(--action);
+    color: var(--action);
+    font-size: 0.9rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+}
+
+.ms_auth-submit-button:hover,
+.ms_auth-guestLogIn:hover,
+.ms_logOut-container-action-btns button:hover {
+    background: rgba(22, 41, 70, 0.5);
+}
+
+.ms_auth-guestLogIn {
+    margin-top: 0rem;
+    width: 100%;
+}
+
+.ms_auth-navigationToOtherAuth {
+    color: var(--gray-shade-three);
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.ms_logOut-container-action-btns {
+    justify-content: space-around;
+}
+
+.ms_logOut-container-text {
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+.ms_logOut-container-action-btns button {
+    margin: 1rem 0rem 0.5rem 0rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.ms_auth-err-msg {
+    color: var(--light-red);
+    position: absolute;
+    top: 10%;
+}
+
+@media only screen and (max-width: 400px) {
+    .ms_auth-container {
+        width: 17rem;
+    }
+
+    .ms_logOut-container-text,
+    .ms_logOut-container-action-btns button {
+        font-size: 0.8rem;
+    }
+
+    .ms_logOut-container-action-btns button {
+        padding: 0.4rem 1rem;
+    }
+
+    .ms_auth-err-msg {
+        font-size: 0.9rem;
+    }
+}
