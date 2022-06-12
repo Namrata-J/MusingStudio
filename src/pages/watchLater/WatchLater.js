@@ -1,4 +1,3 @@
-import "./watchLater.css";
 import { Header, SideBar, WatchLaterVideosListing } from "../../components";
 
 const WatchLaterPage = () => {
