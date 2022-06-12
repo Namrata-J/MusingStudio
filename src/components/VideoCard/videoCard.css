@@ -119,9 +119,8 @@
     text-decoration: underline;
 }
 
-.ms_video-card-option:hover,
 .ms_video-card-option span  {
-    color: var(--gray-shade-three);
+    color: inherit;
 }
 
 .ms_video-card-option span {

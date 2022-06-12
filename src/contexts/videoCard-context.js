@@ -8,15 +8,18 @@ const VideoCardProvider = ({ children }) => {
     const optionsPopUpList = [
         {
             optionIcon: <AiFillLike />,
-            optionName: "Add To Liked"
+            optionName: "Add To Liked",
+            optionFor: "LIKE_OPERATION"
         },
         {
             optionIcon: <BsFillCollectionPlayFill />,
-            optionName: "Add To Playlist"
+            optionName: "Add To Playlist",
+            optionFor: "PLAYLIST_OPERATION"
         },
         {
             optionIcon: <MdWatchLater />,
-            optionName: "Add To WatchLater"
+            optionName: "Add To WatchLater",
+            optionFor: "WATCH_LATER_OPERATION"
         }
     ];
 

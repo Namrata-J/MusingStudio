@@ -11,7 +11,7 @@
     background-color: var(--gray-shade-two);
     height: 5.5rem;
     flex-grow: 1;
-    min-width: 20rem;
+    min-width: 13rem;
     max-width: 24rem;
     position: relative;
 }
@@ -35,8 +35,22 @@
 
 .ms_privateRouteVideoCard-info>* {
     color: var(--gray-shade-three);
-    font-family: 'Gruppo', cursive;
     font-size: 0.9rem;
+}
+
+.ms_no-liked-videos-text-container {
+    height: 70vh;
+    width: 100%;
+}
+
+.ms_no-liked-videos-text,
+.ms_privateRouteVideoCard-info>* {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_no-liked-videos-text {
+    color: var(--action);
+    font-size: 1.2rem;
 }
 
 .ms_privateRouteVideoCard-likes,
@@ -60,4 +74,24 @@
 .ms_privateRouteVideoCard-like-icon {
     color: var(--action);
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .ms_privateRouteVideoCard-card {
+        height: 5rem;
+    }
+
+    .ms_no-liked-videos-text {
+        font-size: 1rem;
+    }
+
+    .ms_privateRouteVideoCard-info>* {
+        font-size: 0.8rem;
+    }
+
+    .ms_privateRouteVideoCard-likes,
+    .ms_privateRouteVideoCard-music-duration,
+    .ms_privateRouteVideoCard-release-date {
+        font-size: 0.6rem;
+    }
 }
