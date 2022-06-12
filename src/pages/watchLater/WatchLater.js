@@ -9,7 +9,7 @@ const WatchLaterPage = () => {
             <div className="ms_watchlaterpage-main-section ms_flex">
                 <SideBar />
                 <div className="ms_privateVideoPage-content-section content-section ms_flex">
-                    <h4 className="ms_fw-b">Liked Videos</h4>
+                    <h4 className="ms_fw-b">WatchLater Videos</h4>
                     <WatchLaterVideosListing />
                 </div>
             </div>
