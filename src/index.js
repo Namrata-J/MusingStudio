@@ -11,7 +11,8 @@ import {
   AuthProvider,
   VideoCardProvider,
   LikedVideosProvider,
-  WatchLaterProvider
+  WatchLaterProvider,
+  OptionsIconProvider
 } from "./contexts/";
 
 // Call make Server
@@ -28,7 +29,9 @@ ReactDOM.render(
                 <VideoCardProvider>
                   <LikedVideosProvider>
                     <WatchLaterProvider>
-                      <App />
+                      <OptionsIconProvider>
+                        <App />
+                      </OptionsIconProvider>
                     </WatchLaterProvider>
                   </LikedVideosProvider>
                 </VideoCardProvider>
