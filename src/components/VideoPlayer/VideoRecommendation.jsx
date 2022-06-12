@@ -1,11 +1,15 @@
 import "./singleVideoListing.css";
-import { Link } from "react-router-dom";
-import { useVideo } from "../../contexts/";
+import { Link, useNavigate } from "react-router-dom";
+import { useVideo, useVideoCard, useAuth, useOptionsIcon } from "../../contexts/";
 import { BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoRecommendation = (msSingleVideoCardDetail) => {
 
+    const navigate = useNavigate();
     const { msVideos } = useVideo();
+    const { isUserLoggedIn } = useAuth();
+    const { getTheEachOptionOperation } = useOptionsIcon();
+    const { optionsPopUpList, videoIdOfCard, setVideoIdOfCard } = useVideoCard();
     let filteredRecommendations = [];
 
     if (msSingleVideoCardDetail.category_type !== undefined) {
@@ -25,8 +29,39 @@ const VideoRecommendation = (msSingleVideoCardDetail) => {
                                         <p className="ms_recommended-video-title ms_fw-b">{eachRecommendation.music_title}</p>
                                         <p className="ms_recommended-video-duration">{eachRecommendation.music_description.music_duration}</p>
                                     </div>
-                                    <div className="ms_recommended-video-icon-container b-rad4">
+                                    <div
+                                        className="ms_recommended-video-icon-container b-rad4"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            e.preventDefault();
+                                            eachRecommendation._id === videoIdOfCard ?
+                                                setVideoIdOfCard("") : setVideoIdOfCard(eachRecommendation._id)
+                                        }}>
                                         <BiDotsVerticalRounded />
+                                        <div
+                                            className="ms_recommended-video-options-popUp b-rad1 ms_flex"
+                                            style={{
+                                                display: videoIdOfCard === eachRecommendation._id ?
+                                                    "flex" : "none"
+                                            }}>
+                                            {
+                                                optionsPopUpList.map((eachOption, index) => (
+                                                    <div
+                                                        className="ms_recommended-video-popUp-eachOption"
+                                                        key={index}
+                                                        onClick={() => {
+                                                            isUserLoggedIn ?
+                                                                getTheEachOptionOperation(eachOption, eachRecommendation, "FOR_OPERATION") :
+                                                                navigate("/login")
+                                                        }}
+                                                        style={
+                                                            getTheEachOptionOperation(eachOption, eachRecommendation, "FOR_STYLE")
+                                                        }>
+                                                        {eachOption.optionIcon}
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
                                     </div>
                                 </div>
                             </Link>
