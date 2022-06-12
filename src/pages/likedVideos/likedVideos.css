@@ -1,12 +1,12 @@
 @import url(../../utils/base.css);
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-.ms_likedVideospage-content-section {
+.ms_privateVideoPage-content-section {
     flex-direction: column;
     padding: 1rem;
 }
 
-.ms_likedVideospage-content-section h4 {
+.ms_privateVideoPage-content-section h4 {
     color: var(--gray-shade-three);
     font-family: 'Gruppo', cursive;
     font-size: 1.2rem;
