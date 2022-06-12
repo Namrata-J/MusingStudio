@@ -38,17 +38,20 @@
     font-size: 0.9rem;
 }
 
-.ms_no-liked-videos-text-container {
+.ms_no-liked-videos-text-container,
+.ms_no-watchLater-videos-text-container {
     height: 70vh;
     width: 100%;
 }
 
 .ms_no-liked-videos-text,
+.ms_no-watchLater-videos-text,
 .ms_privateRouteVideoCard-info>* {
     font-family: 'Gruppo', cursive;
 }
 
-.ms_no-liked-videos-text {
+.ms_no-liked-videos-text,
+.ms_no-watchLater-videos-text {
     color: var(--action);
     font-size: 1.2rem;
 }
@@ -81,7 +84,8 @@
         height: 5rem;
     }
 
-    .ms_no-liked-videos-text {
+    .ms_no-liked-videos-text,
+    .ms_no-watchLater-videos-text {
         font-size: 1rem;
     }
 

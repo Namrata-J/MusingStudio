@@ -24,6 +24,7 @@ import { NoResultsFoundComp } from "./VideoCard/NoResultFound";
 import { RequiresAuth } from "./RequiresAuth/RequiresAuth";
 import { LikedVideosListing } from "./PrivateRouteVideos/LikedVideosListing";
 import { PrivateRouteCard } from "./PrivateRouteVideos/PrivateRouteCard";
+import { WatchLaterVideosListing } from "./PrivateRouteVideos/watchLaterVideosListing";
 
 export {
     Header,
@@ -51,5 +52,6 @@ export {
     NoResultsFoundComp,
     RequiresAuth,
     LikedVideosListing,
-    PrivateRouteCard
+    PrivateRouteCard,
+    WatchLaterVideosListing
 };

@@ -1,6 +1,6 @@
 import "./videoCard.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useVideoCard, useLikedVideos, useAuth } from "../../contexts/";
+import { useVideoCard, useLikedVideos, useAuth, useWatchLater } from "../../contexts/";
 import { BsFillPlayFill, BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoCard = (eachVideo) => {
@@ -8,12 +8,23 @@ const VideoCard = (eachVideo) => {
     const {
         optionsPopUpList,
         videoIdOfCard,
-        setVideoIdOfCard } = useVideoCard();
-    const { addToLikedVideos,
+        setVideoIdOfCard
+    } = useVideoCard();
+    const {
+        addToLikedVideos,
         userLikedVideos,
         removeFromLikedVideos,
-        checkIfVideoIsAlreadyLiked } = useLikedVideos();
-    const { isUserLoggedIn } = useAuth();
+        checkIfVideoIsAlreadyLiked
+    } = useLikedVideos();
+    const {
+        addToWatchLater,
+        userWatchLaterVideos,
+        deleteFromWatchLaterVideos,
+        checkIfVideoIsAlreadyAddedToWatchLater
+    } = useWatchLater();
+    const {
+        isUserLoggedIn
+    } = useAuth();
     const navigate = useNavigate();
 
     const getTheEachOptionOperation = (eachOption, checkIfVideoIsAlreadyLiked, description) => {
@@ -26,6 +37,15 @@ const VideoCard = (eachVideo) => {
                         return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? { color: "var(--action)" } : { color: "var(--black)" }
                     } else
                         return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? "Remove" : `${eachOption.optionName}`
+
+            case "WATCH_LATER_OPERATION":
+                if (description === "FOR_OPERATION") {
+                    checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? deleteFromWatchLaterVideos(eachVideo._id) : addToWatchLater(eachVideo)
+                } else
+                    if (description === "FOR_STYLE") {
+                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? { color: "var(--action)" } : { color: "var(--black)" }
+                    } else
+                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? "Remove" : `${eachOption.optionName}`
         }
     }
 
