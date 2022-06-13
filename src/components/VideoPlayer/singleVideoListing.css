@@ -148,8 +148,9 @@ p.ms_recommended-video-duration {
     color: var(--black);
 }
 
-.ms_recommended-video-popUp-eachOption:hover {
-    color: var(--action);
+.ms_recommended-video-popUp-eachOption:hover,
+.ms_vp-likes:hover>* {
+    color: var(--action) !important; 
 }
 
 .ms_recommended-video-icon-container:hover {
