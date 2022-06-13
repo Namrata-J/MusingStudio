@@ -2,7 +2,7 @@ import "./singleVideoCardDetail.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { SingleVideoListing, SafeFallBack } from "../../components/";
+import { SingleVideoListing, SafeFallBack } from "../../components";
 
 const SingleVideoCardDetailPage = () => {
 
