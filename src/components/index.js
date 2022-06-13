@@ -25,6 +25,7 @@ import { RequiresAuth } from "./RequiresAuth/RequiresAuth";
 import { LikedVideosListing } from "./PrivateRouteVideos/LikedVideosListing";
 import { PrivateRouteCard } from "./PrivateRouteVideos/PrivateRouteCard";
 import { WatchLaterVideosListing } from "./PrivateRouteVideos/watchLaterVideosListing";
+import { HistoryVideosListing } from "./PrivateRouteVideos/HistoryVideosListing";
 
 export {
     Header,
@@ -53,5 +54,6 @@ export {
     RequiresAuth,
     LikedVideosListing,
     PrivateRouteCard,
-    WatchLaterVideosListing
+    WatchLaterVideosListing,
+    HistoryVideosListing
 };

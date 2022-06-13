@@ -1,7 +1,7 @@
 import "./privateRouteVideos.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useLikedVideos, useWatchLater } from "../../contexts/";
-import { AiFillLike, MdWatchLater } from "../../utils/icons";
+import { useLikedVideos, useWatchLater, useHistory } from "../../contexts/";
+import { AiFillLike, MdWatchLater, AiFillDelete } from "../../utils/icons";
 
 const PrivateRouteCard = (eachVideo) => {
 
@@ -9,6 +9,7 @@ const PrivateRouteCard = (eachVideo) => {
     const location = useLocation();
     const navigate = useNavigate();
     const { deleteFromWatchLaterVideos } = useWatchLater();
+    const { removeVideoFromHistory } = useHistory();
 
     return (
         <div className="ms_privateRouteVideoCard-card b-rad1 ms_cp ms_flex" onClick={() => navigate(`/videoDetail/${eachVideo._id}`)}>
@@ -30,6 +31,11 @@ const PrivateRouteCard = (eachVideo) => {
                 onClick={(e) => { e.stopPropagation(); deleteFromWatchLaterVideos(eachVideo._id) }}
                 style={location?.state?.from === "/watchLater" ? { display: "block" } : { display: "none" }}>
                 <MdWatchLater className="ms_privateRouteVideoCard-like-icon" />
+            </div>
+            <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
+            onClick={(e) => { e.stopPropagation(); removeVideoFromHistory(eachVideo._id) }}
+            style={location?.state?.from === "/history" ? { display: "block" } : { display: "none" }}>
+                <AiFillDelete className="ms_privateRouteVideoCard-like-icon" />
             </div>
         </div>
     );

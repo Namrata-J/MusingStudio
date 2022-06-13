@@ -7,6 +7,7 @@ import { useLikedVideos, LikedVideosProvider } from "./likedVideos-context";
 import { useVideoCard, VideoCardProvider } from "./videoCard-context";
 import { useWatchLater, WatchLaterProvider } from "./watchLater-context";
 import { useOptionsIcon, OptionsIconProvider } from "./optionsIcon-context";
+import { useHistory, HistoryProvider } from "./history-context";
 
 export {
     useHeader,
@@ -26,5 +27,7 @@ export {
     useWatchLater,
     WatchLaterProvider,
     useOptionsIcon,
-    OptionsIconProvider
+    OptionsIconProvider,
+    useHistory,
+    HistoryProvider
 };

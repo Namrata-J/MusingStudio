@@ -12,7 +12,8 @@ import {
   VideoCardProvider,
   LikedVideosProvider,
   WatchLaterProvider,
-  OptionsIconProvider
+  OptionsIconProvider,
+  HistoryProvider
 } from "./contexts/";
 
 // Call make Server
@@ -30,7 +31,9 @@ ReactDOM.render(
                   <LikedVideosProvider>
                     <WatchLaterProvider>
                       <OptionsIconProvider>
-                        <App />
+                        <HistoryProvider>
+                          <App />
+                        </HistoryProvider>
                       </OptionsIconProvider>
                     </WatchLaterProvider>
                   </LikedVideosProvider>
