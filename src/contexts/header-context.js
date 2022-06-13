@@ -77,7 +77,7 @@ const HeaderProvider = ({ children }) => {
         },
         {
             itemName: "Watch Later",
-            itemLink: "/likedVideos",
+            itemLink: "/watchLater",
             itemIcon: <MdWatchLater />
         },
         {

@@ -1,6 +1,6 @@
 import "./videoCard.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useVideoCard, useLikedVideos, useAuth } from "../../contexts/";
+import { useVideoCard, useAuth, useOptionsIcon } from "../../contexts/";
 import { BsFillPlayFill, BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoCard = (eachVideo) => {
@@ -8,26 +8,15 @@ const VideoCard = (eachVideo) => {
     const {
         optionsPopUpList,
         videoIdOfCard,
-        setVideoIdOfCard } = useVideoCard();
-    const { addToLikedVideos,
-        userLikedVideos,
-        removeFromLikedVideos,
-        checkIfVideoIsAlreadyLiked } = useLikedVideos();
-    const { isUserLoggedIn } = useAuth();
+        setVideoIdOfCard
+    } = useVideoCard();
+    const {
+        isUserLoggedIn
+    } = useAuth();
+    const {
+        getTheEachOptionOperation
+    } = useOptionsIcon();
     const navigate = useNavigate();
-
-    const getTheEachOptionOperation = (eachOption, checkIfVideoIsAlreadyLiked, description) => {
-        switch (eachOption.optionFor) {
-            case "LIKE_OPERATION":
-                if (description === "FOR_OPERATION") {
-                    checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? removeFromLikedVideos(eachVideo._id) : addToLikedVideos(eachVideo)
-                } else
-                    if (description === "FOR_STYLE") {
-                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? { color: "var(--action)" } : { color: "var(--black)" }
-                    } else
-                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? "Remove" : `${eachOption.optionName}`
-        }
-    }
 
     return (
         <div className="ms_video-card ms_cp">
@@ -62,17 +51,17 @@ const VideoCard = (eachVideo) => {
                                     key={index}
                                     onClick={() => {
                                         isUserLoggedIn ?
-                                            getTheEachOptionOperation(eachOption, checkIfVideoIsAlreadyLiked, "FOR_OPERATION") :
+                                            getTheEachOptionOperation(eachOption, eachVideo, "FOR_OPERATION") :
                                             navigate("/login")
                                     }}
                                     style={
-                                        getTheEachOptionOperation(eachOption, checkIfVideoIsAlreadyLiked, "FOR_STYLE")
+                                        getTheEachOptionOperation(eachOption, eachVideo, "FOR_STYLE")
                                     }>
                                     <span className="ms_video-card-options-popUp-container-icon">
                                         {eachOption.optionIcon}
                                     </span>
                                     <span>
-                                        {getTheEachOptionOperation(eachOption, checkIfVideoIsAlreadyLiked, "FOR_INNERTEXT")}
+                                        {getTheEachOptionOperation(eachOption, eachVideo, "FOR_INNERTEXT")}
                                     </span>
                                 </div>
                             ))

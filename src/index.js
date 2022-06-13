@@ -10,7 +10,9 @@ import {
   FilterProvider,
   AuthProvider,
   VideoCardProvider,
-  LikedVideosProvider
+  LikedVideosProvider,
+  WatchLaterProvider,
+  OptionsIconProvider
 } from "./contexts/";
 
 // Call make Server
@@ -26,7 +28,11 @@ ReactDOM.render(
               <FilterProvider>
                 <VideoCardProvider>
                   <LikedVideosProvider>
-                    <App />
+                    <WatchLaterProvider>
+                      <OptionsIconProvider>
+                        <App />
+                      </OptionsIconProvider>
+                    </WatchLaterProvider>
                   </LikedVideosProvider>
                 </VideoCardProvider>
               </FilterProvider>

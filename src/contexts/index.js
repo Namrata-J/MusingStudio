@@ -5,6 +5,8 @@ import { useFilter, FilterProvider } from "./filtersContext";
 import { useAuth, AuthProvider } from "./auth-context";
 import { useLikedVideos, LikedVideosProvider } from "./likedVideos-context";
 import { useVideoCard, VideoCardProvider } from "./videoCard-context";
+import { useWatchLater, WatchLaterProvider } from "./watchLater-context";
+import { useOptionsIcon, OptionsIconProvider } from "./optionsIcon-context";
 
 export {
     useHeader,
@@ -20,5 +22,9 @@ export {
     useLikedVideos,
     LikedVideosProvider,
     useVideoCard,
-    VideoCardProvider
+    VideoCardProvider,
+    useWatchLater,
+    WatchLaterProvider,
+    useOptionsIcon,
+    OptionsIconProvider
 };
