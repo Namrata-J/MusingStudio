@@ -29,6 +29,7 @@ import { HistoryVideosListing } from "./PrivateRouteVideos/HistoryVideosListing"
 import { CreatePlaylistPopUp } from "./createPlaylistPopUp/CreatePlaylistPopUp";
 import { PlaylistsListing } from "./PrivateRouteVideos/PlaylistsListing";
 import { SinglePlaylistListing } from "./PrivateRouteVideos/singlePlaylistListing";
+import { MStudioProviders } from "./CombinedProviders/MStudioProviders";
 
 export {
     Header,
@@ -61,5 +62,6 @@ export {
     HistoryVideosListing,
     CreatePlaylistPopUp,
     PlaylistsListing,
-    SinglePlaylistListing
+    SinglePlaylistListing,
+    MStudioProviders
 };
