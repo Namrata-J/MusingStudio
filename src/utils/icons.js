@@ -2,10 +2,11 @@ import { BsFillPlayCircleFill, BsSearch, BsFillCollectionPlayFill, BsFillPlayFil
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUserAlt, FaHome } from "react-icons/fa";
 import { VscClose } from "react-icons/vsc";
-import { MdOutlineExplore, MdWatchLater, MdAutoDelete } from "react-icons/md";
+import { MdOutlineExplore, MdWatchLater, MdAutoDelete, MdPlaylistPlay, MdAdd } from "react-icons/md";
 import { ImHistory } from "react-icons/im";
 import { AiFillLike, AiFillEye, AiFillDelete } from "react-icons/ai";
 import { BiDotsVerticalRounded } from "react-icons/bi";
+import { RiDeleteBackFill } from "react-icons/ri";
 
 export {
     BsFillPlayCircleFill,
@@ -23,5 +24,8 @@ export {
     BiDotsVerticalRounded,
     AiFillEye,
     AiFillDelete,
-    MdAutoDelete
+    MdAutoDelete,
+    MdPlaylistPlay,
+    MdAdd,
+    RiDeleteBackFill
 };

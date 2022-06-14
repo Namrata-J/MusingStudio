@@ -1,6 +1,6 @@
 import "./videoCard.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useVideoCard, useAuth, useOptionsIcon } from "../../contexts/";
+import { useVideoCard, useAuth, useOptionsIcon, usePlaylist } from "../../contexts/";
 import { BsFillPlayFill, BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoCard = (eachVideo) => {
@@ -10,12 +10,9 @@ const VideoCard = (eachVideo) => {
         videoIdOfCard,
         setVideoIdOfCard
     } = useVideoCard();
-    const {
-        isUserLoggedIn
-    } = useAuth();
-    const {
-        getTheEachOptionOperation
-    } = useOptionsIcon();
+    const { isUserLoggedIn } = useAuth();
+    const { getTheEachOptionOperation } = useOptionsIcon();
+    const { doAddAPlaylistOptionOperation } = usePlaylist();
     const navigate = useNavigate();
 
     return (
@@ -50,7 +47,8 @@ const VideoCard = (eachVideo) => {
                                     className="ms_video-card-option ms_flex"
                                     key={index}
                                     onClick={() => {
-                                        isUserLoggedIn ?
+                                        isUserLoggedIn ? eachOption.optionFor === "PLAYLIST_OPERATION" ?
+                                            doAddAPlaylistOptionOperation(eachVideo) :
                                             getTheEachOptionOperation(eachOption, eachVideo, "FOR_OPERATION") :
                                             navigate("/login")
                                     }}
@@ -61,7 +59,11 @@ const VideoCard = (eachVideo) => {
                                         {eachOption.optionIcon}
                                     </span>
                                     <span>
-                                        {getTheEachOptionOperation(eachOption, eachVideo, "FOR_INNERTEXT")}
+                                        {
+                                            eachOption.optionFor === "PLAYLIST_OPERATION" ?
+                                                eachOption.optionName :
+                                                getTheEachOptionOperation(eachOption, eachVideo, "FOR_INNERTEXT")
+                                        }
                                     </span>
                                 </div>
                             ))

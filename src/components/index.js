@@ -26,6 +26,9 @@ import { LikedVideosListing } from "./PrivateRouteVideos/LikedVideosListing";
 import { PrivateRouteCard } from "./PrivateRouteVideos/PrivateRouteCard";
 import { WatchLaterVideosListing } from "./PrivateRouteVideos/watchLaterVideosListing";
 import { HistoryVideosListing } from "./PrivateRouteVideos/HistoryVideosListing";
+import { CreatePlaylistPopUp } from "./createPlaylistPopUp/CreatePlaylistPopUp";
+import { PlaylistsListing } from "./PrivateRouteVideos/PlaylistsListing";
+import { SinglePlaylistListing } from "./PrivateRouteVideos/singlePlaylistListing";
 
 export {
     Header,
@@ -55,5 +58,8 @@ export {
     LikedVideosListing,
     PrivateRouteCard,
     WatchLaterVideosListing,
-    HistoryVideosListing
+    HistoryVideosListing,
+    CreatePlaylistPopUp,
+    PlaylistsListing,
+    SinglePlaylistListing
 };

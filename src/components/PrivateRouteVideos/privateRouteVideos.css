@@ -39,19 +39,22 @@
 }
 
 .ms_no-liked-videos-text-container,
-.ms_no-watchLater-videos-text-container {
+.ms_no-watchLater-videos-text-container,
+.ms_no-playlist-videos-text-container {
     height: 70vh;
     width: 100%;
 }
 
 .ms_no-liked-videos-text,
 .ms_no-watchLater-videos-text,
+.ms_no-playlist-videos-text,
 .ms_privateRouteVideoCard-info>* {
     font-family: 'Gruppo', cursive;
 }
 
 .ms_no-liked-videos-text,
-.ms_no-watchLater-videos-text {
+.ms_no-watchLater-videos-text,
+.ms_no-playlist-videos-text {
     color: var(--action);
     font-size: 1.2rem;
 }
@@ -85,7 +88,8 @@
     }
 
     .ms_no-liked-videos-text,
-    .ms_no-watchLater-videos-text {
+    .ms_no-watchLater-videos-text,
+    .ms_no-playlist-videos-text {
         font-size: 1rem;
     }
 

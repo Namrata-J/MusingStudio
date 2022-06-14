@@ -1,5 +1,5 @@
 import "./videoListing.css";
-import { Header, SideBar, ChipsListingSection, VideoCardListingSection } from "../../components";
+import { Header, SideBar, ChipsListingSection, VideoCardListingSection, CreatePlaylistPopUp } from "../../components";
 
 const VideoListingPage = () => {
     return (
@@ -14,6 +14,7 @@ const VideoListingPage = () => {
                     <VideoCardListingSection />
                 </div>
             </div>
+            <CreatePlaylistPopUp />
         </div>
     );
 }

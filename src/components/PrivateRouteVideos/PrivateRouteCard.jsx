@@ -1,15 +1,16 @@
 import "./privateRouteVideos.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useLikedVideos, useWatchLater, useHistory } from "../../contexts/";
-import { AiFillLike, MdWatchLater, AiFillDelete } from "../../utils/icons";
+import { useLikedVideos, useWatchLater, useHistory, usePlaylist } from "../../contexts/";
+import { AiFillLike, MdWatchLater, AiFillDelete, RiDeleteBackFill } from "../../utils/icons";
 
-const PrivateRouteCard = (eachVideo) => {
+const PrivateRouteCard = ({ eachVideo, playlistId }) => {
 
     const { removeFromLikedVideos } = useLikedVideos();
     const location = useLocation();
     const navigate = useNavigate();
     const { deleteFromWatchLaterVideos } = useWatchLater();
     const { removeVideoFromHistory } = useHistory();
+    const { deleteVideoFromPlaylist } = usePlaylist();
 
     return (
         <div className="ms_privateRouteVideoCard-card b-rad1 ms_cp ms_flex" onClick={() => navigate(`/videoDetail/${eachVideo._id}`)}>
@@ -33,9 +34,14 @@ const PrivateRouteCard = (eachVideo) => {
                 <MdWatchLater className="ms_privateRouteVideoCard-like-icon" />
             </div>
             <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
-            onClick={(e) => { e.stopPropagation(); removeVideoFromHistory(eachVideo._id) }}
-            style={location?.state?.from === "/history" ? { display: "block" } : { display: "none" }}>
+                onClick={(e) => { e.stopPropagation(); removeVideoFromHistory(eachVideo._id) }}
+                style={location?.state?.from === "/history" ? { display: "block" } : { display: "none" }}>
                 <AiFillDelete className="ms_privateRouteVideoCard-like-icon" />
+            </div>
+            <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
+                onClick={(e) => { e.stopPropagation(); deleteVideoFromPlaylist(playlistId, eachVideo._id) }}
+                style={location?.state?.from === undefined ? { display: "block" } : { display: "none" }}>
+                <RiDeleteBackFill className="ms_privateRouteVideoCard-like-icon" />
             </div>
         </div>
     );

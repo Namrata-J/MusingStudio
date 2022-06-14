@@ -8,6 +8,7 @@ import { useVideoCard, VideoCardProvider } from "./videoCard-context";
 import { useWatchLater, WatchLaterProvider } from "./watchLater-context";
 import { useOptionsIcon, OptionsIconProvider } from "./optionsIcon-context";
 import { useHistory, HistoryProvider } from "./history-context";
+import { usePlaylist, PlaylistProvider } from "./playlist-context";
 
 export {
     useHeader,
@@ -29,5 +30,7 @@ export {
     useOptionsIcon,
     OptionsIconProvider,
     useHistory,
-    HistoryProvider
+    HistoryProvider,
+    usePlaylist,
+    PlaylistProvider
 };
