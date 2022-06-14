@@ -15,7 +15,7 @@ const HistoryVideosListing = () => {
                 </p>
             </div> :
                 userHistory.map((eachVideo) => (
-                    <PrivateRouteCard {...eachVideo} key={eachVideo._id} />
+                    <PrivateRouteCard {...{ eachVideo }} key={eachVideo._id} />
                 ))
             }
         </div>

@@ -15,7 +15,7 @@ const WatchLaterVideosListing = () => {
                     </p>
                 </div> :
                     userWatchLaterVideos.map((eachVideo) => (
-                        <PrivateRouteCard {...eachVideo} key={eachVideo._id} />
+                        <PrivateRouteCard {...{ eachVideo }} key={eachVideo._id} />
                     ))
             }
         </div>
