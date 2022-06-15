@@ -25,6 +25,11 @@ import { RequiresAuth } from "./RequiresAuth/RequiresAuth";
 import { LikedVideosListing } from "./PrivateRouteVideos/LikedVideosListing";
 import { PrivateRouteCard } from "./PrivateRouteVideos/PrivateRouteCard";
 import { WatchLaterVideosListing } from "./PrivateRouteVideos/watchLaterVideosListing";
+import { HistoryVideosListing } from "./PrivateRouteVideos/HistoryVideosListing";
+import { CreatePlaylistPopUp } from "./createPlaylistPopUp/CreatePlaylistPopUp";
+import { PlaylistsListing } from "./PrivateRouteVideos/PlaylistsListing";
+import { SinglePlaylistListing } from "./PrivateRouteVideos/singlePlaylistListing";
+import { MStudioProviders } from "./CombinedProviders/MStudioProviders";
 
 export {
     Header,
@@ -53,5 +58,10 @@ export {
     RequiresAuth,
     LikedVideosListing,
     PrivateRouteCard,
-    WatchLaterVideosListing
+    WatchLaterVideosListing,
+    HistoryVideosListing,
+    CreatePlaylistPopUp,
+    PlaylistsListing,
+    SinglePlaylistListing,
+    MStudioProviders
 };

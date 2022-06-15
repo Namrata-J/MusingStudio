@@ -15,7 +15,7 @@ const LikedVideosListing = () => {
                     </p>
                 </div> :
                     userLikedVideos.map((eachVideo) => (
-                        <PrivateRouteCard {...eachVideo} key={eachVideo._id} />
+                        <PrivateRouteCard {...{ eachVideo }} key={eachVideo._id} />
                     ))
             }
         </div>

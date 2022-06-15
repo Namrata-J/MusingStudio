@@ -1,0 +1,39 @@
+@import url(../../utils//base.css);
+
+.ms_privateVideoPage-content-section {
+    position: relative;
+}
+
+.ms_clearAllHistory-icon-container {
+    padding: 0.7rem 0.7rem 0.5rem 0.9rem;
+    position: absolute;
+    right: 20rem;
+    top: 0.5rem;
+}
+
+.ms_clearAllHistory-icon {
+    color: var(--gray-shade-three);
+    font-size: 1.5rem;
+}
+
+.ms_clearAllHistory-icon-container:hover .ms_clearAllHistory-icon,
+.ms_clearAllHistory-icon-container:hover {
+    background-color: var(--black);
+    color: var(--action);
+}
+
+@media only screen and (max-width: 925px) {
+    .ms_clearAllHistory-icon-container {
+        right: 10rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .ms_clearAllHistory-icon-container {
+        right: 1rem;
+    }
+
+    .ms_clearAllHistory-icon {
+        font-size: 1.2rem;
+    }
+}

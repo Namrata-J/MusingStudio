@@ -11,7 +11,8 @@ import {
     LogOutPage,
     SignUpPage,
     SingleVideoCardDetailPage,
-    NoRouteMatchPage
+    NoRouteMatchPage,
+    SinglePlaylistVideosListingPage
 } from "../../pages/";
 
 const RoutesComponent = () => {
@@ -27,6 +28,7 @@ const RoutesComponent = () => {
             <Route path="/logout" element={<LogOutPage />} />
             <Route path="/signup" element={<SignUpPage />} />
             <Route path="/videoDetail/:videoId" element={<SingleVideoCardDetailPage />} />
+            <Route path="/singlePlaylist/:playlistId" element={<RequiresAuth><SinglePlaylistVideosListingPage /></RequiresAuth>} />
             <Route path="*" element={<NoRouteMatchPage />} />
         </Routes>
     );

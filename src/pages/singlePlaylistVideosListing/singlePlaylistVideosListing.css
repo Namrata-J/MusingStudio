@@ -1,0 +1,25 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_singlePlaylistVideosListing-page {
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.ms_singlePlaylistVideosListing-page h4 {
+    color: var(--gray-shade-three);
+    font-family: 'Gruppo', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .ms_singlePlaylistVideosListing-page {
+        padding: 1rem;
+    }
+
+    .ms_singlePlaylistVideosListing-page h4 {
+        font-size: 1.2rem;
+    }
+}

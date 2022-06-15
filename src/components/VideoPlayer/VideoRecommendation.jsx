@@ -1,6 +1,6 @@
 import "./singleVideoListing.css";
 import { Link, useNavigate } from "react-router-dom";
-import { useVideo, useVideoCard, useAuth, useOptionsIcon } from "../../contexts/";
+import { useVideo, useVideoCard, useAuth, useOptionsIcon, usePlaylist } from "../../contexts/";
 import { BiDotsVerticalRounded } from "../../utils/icons";
 
 const VideoRecommendation = (msSingleVideoCardDetail) => {
@@ -9,6 +9,7 @@ const VideoRecommendation = (msSingleVideoCardDetail) => {
     const { msVideos } = useVideo();
     const { isUserLoggedIn } = useAuth();
     const { getTheEachOptionOperation } = useOptionsIcon();
+    const { doAddAPlaylistOptionOperation } = usePlaylist();
     const { optionsPopUpList, videoIdOfCard, setVideoIdOfCard } = useVideoCard();
     let filteredRecommendations = [];
 
@@ -50,7 +51,8 @@ const VideoRecommendation = (msSingleVideoCardDetail) => {
                                                         className="ms_recommended-video-popUp-eachOption"
                                                         key={index}
                                                         onClick={() => {
-                                                            isUserLoggedIn ?
+                                                            isUserLoggedIn ? eachOption.optionFor === "PLAYLIST_OPERATION" ?
+                                                                doAddAPlaylistOptionOperation(eachRecommendation) :
                                                                 getTheEachOptionOperation(eachOption, eachRecommendation, "FOR_OPERATION") :
                                                                 navigate("/login")
                                                         }}

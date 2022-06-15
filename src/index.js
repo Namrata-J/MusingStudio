@@ -3,17 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import {
-  HeaderProvider,
-  CategoryProvider,
-  VideoProvider,
-  FilterProvider,
-  AuthProvider,
-  VideoCardProvider,
-  LikedVideosProvider,
-  WatchLaterProvider,
-  OptionsIconProvider
-} from "./contexts/";
+import { MStudioProviders } from "./components/";
 
 // Call make Server
 makeServer();
@@ -21,25 +11,9 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <VideoProvider>
-          <CategoryProvider>
-            <HeaderProvider>
-              <FilterProvider>
-                <VideoCardProvider>
-                  <LikedVideosProvider>
-                    <WatchLaterProvider>
-                      <OptionsIconProvider>
-                        <App />
-                      </OptionsIconProvider>
-                    </WatchLaterProvider>
-                  </LikedVideosProvider>
-                </VideoCardProvider>
-              </FilterProvider>
-            </HeaderProvider>
-          </CategoryProvider>
-        </VideoProvider>
-      </AuthProvider>
+      <MStudioProviders>
+        <App />
+      </MStudioProviders>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

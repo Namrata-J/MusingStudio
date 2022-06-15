@@ -1,0 +1,134 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_createPlaylist-close-icon-container,
+.ms-created-playlist {
+    position: relative;
+}
+
+.ms_createPlaylist-popUp-container {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    left: 0px;
+    width: 100%;
+    top: 0px;
+}
+
+.ms_createPlaylist-close-icon,
+.ms_createPlaylist-popUp-container,
+.ms_add-videoToPlaylist-icon-container {
+    position: absolute;
+}
+
+.ms_createPlaylist-close-icon {
+    color: var(--gray-shade-three);
+    font-size: 2.5rem;
+    right: 1rem;
+    top: 1rem;
+}
+
+.ms_createPlaylist-close-icon:hover {
+    color: var(--action);
+}
+
+.ms_createPlaylist-popUp-innercontainer {
+    height: 90vh;
+    width: 100%;
+}
+
+.ms_createPlaylist-popUp {
+    background: rgba(48, 49, 49, 0.9);
+    box-shadow: 0px 0px 10px 0px var(--black);
+    width: 20rem;
+    max-height: 15rem;
+}
+
+.ms_cpp-input-container,
+.ms_createPlaylist-popUp {
+    padding: 0.5rem;
+}
+
+.ms_createPlaylist-popUp h4 {
+    color: var(--action);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.ms_cpp-input,
+.ms_createPlaylist-popUp h4,
+.ms_cpp-create-btn,
+.ms-created-playlist>* {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_cpp-input-container {
+    gap: 2px;
+}
+
+.ms_cpp-input {
+    background-color: rgb(54, 55, 56);
+    color: var(--gray-shade-three);
+    flex-grow: 1;
+    min-width: 15px;
+}
+
+.ms_cpp-create-btn,
+.ms_cpp-input  {
+    padding: 0.5rem 0.7rem;
+}
+
+.ms_cpp-create-btn {
+    border: 1px solid var(--action);
+    color: var(--action);
+}
+
+.ms_cpp-create-btn:hover {
+    background: rgba(38, 39, 39, 0.9);
+}
+
+.ms_created-playlists-container {
+    background-color: var(--gray-shade-two);
+    overflow-y: scroll;
+    max-height: 8.5rem;
+    margin: 0.5rem;
+}
+
+.ms-created-playlist {
+    background-color: var(--gray-shade-one);
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    height: 2.7rem;
+}
+
+.ms-created-playlist>*,
+.ms_add-videoToPlaylist-icon {
+    color: var(--gray-shade-three);
+}
+
+.ms_videos-countInPlaylist {
+    font-size: 0.7rem;
+}
+
+.ms_add-videoToPlaylist-icon-container {
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    top: 0.4rem;
+    right: 1rem;
+}
+
+.ms_add-videoToPlaylist-icon-container:hover,
+.ms_add-videoToPlaylist-icon-container:hover .ms_add-videoToPlaylist-icon {
+    background-color: var(--black);
+    color: var(--action);
+}
+
+@media only screen and (max-width: 400px) {
+    .ms_createPlaylist-popUp h4 {
+        font-size: 1rem;
+    }
+
+    .ms_createPlaylist-popUp {
+        width: 16rem;
+    }
+}

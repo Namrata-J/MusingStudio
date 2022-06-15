@@ -2,7 +2,7 @@ import "./singleVideoCardDetail.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { SingleVideoListing, SafeFallBack } from "../../components/";
+import { SingleVideoListing, SafeFallBack, CreatePlaylistPopUp } from "../../components";
 
 const SingleVideoCardDetailPage = () => {
 
@@ -29,6 +29,7 @@ const SingleVideoCardDetailPage = () => {
             {
                 msSingleVideoCardDetail !== undefined ? <SingleVideoListing {...msSingleVideoCardDetail} /> : <SafeFallBack />
             }
+            <CreatePlaylistPopUp />
         </div>
     );
 }

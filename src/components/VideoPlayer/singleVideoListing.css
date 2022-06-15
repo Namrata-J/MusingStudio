@@ -4,9 +4,11 @@
 .ms_single-video-listing-component {
     background-color: var(--gray-shade-one);
     color: var(--gray-shade-three);
+    height: 100%;
     width: 100%;
     padding: 1rem;
     position: relative;
+    overflow-y: scroll;
 }
 
 .ms_single-video-listing-component,
@@ -148,8 +150,9 @@ p.ms_recommended-video-duration {
     color: var(--black);
 }
 
-.ms_recommended-video-popUp-eachOption:hover {
-    color: var(--action);
+.ms_recommended-video-popUp-eachOption:hover,
+.ms_vp-likes:hover>* {
+    color: var(--action) !important; 
 }
 
 .ms_recommended-video-icon-container:hover {
@@ -196,6 +199,10 @@ p.ms_recommended-video-duration {
 }
 
 @media only screen and (max-width: 700px) {
+    .ms_single-video-listing-component {
+        height: auto;
+    }
+    
     .ms_vedio-player-section {
         width: 100%;
     }

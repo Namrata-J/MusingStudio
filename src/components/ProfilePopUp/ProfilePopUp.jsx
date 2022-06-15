@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useHeader } from "../../contexts/";
+import { useHeader, useAuth } from "../../contexts/";
 
 const ProfilePopUp = () => {
 
@@ -7,14 +7,26 @@ const ProfilePopUp = () => {
         profilePopUpContainerDisplay,
         profilePopUpContainerList
     } = useHeader();
+    const { isUserLoggedIn } = useAuth();
 
     return (
         <div className="ms_profile-popUp-container b-rad1" style={{ display: profilePopUpContainerDisplay }}>
             <ul>
                 {
-                    profilePopUpContainerList.map((item, index) => (
-                        <Link to={item.itemLink} key={index}><li className="ms_fw-b">{item.itemName}</li></Link>
-                    ))
+                    isUserLoggedIn ? profilePopUpContainerList.filter(
+                        (item) => item.itemName === "LogOut").map((eachItem, index) => (
+                            <Link to={eachItem.itemLink} key={index}>
+                                <li className="ms_fw-b">
+                                    {eachItem.itemName}
+                                </li>
+                            </Link>
+                        )) : profilePopUpContainerList.filter((item) => item.itemName !== "LogOut").map((eachItem, index) => (
+                            <Link to={eachItem.itemLink} key={index}>
+                                <li className="ms_fw-b">
+                                    {eachItem.itemName}
+                                </li>
+                            </Link>
+                        ))
                 }
             </ul>
         </div>

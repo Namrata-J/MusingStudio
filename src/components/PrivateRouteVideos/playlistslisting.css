@@ -1,0 +1,97 @@
+@import url(../../utils/base.css);
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.ms_playlistsListing-section {
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.no-playlists-created-component {
+    height: 75vh;
+    width: 100%;
+}
+
+.ms_playlists-created-text {
+    color: var(--action);
+    font-size: 1.2rem;
+}
+
+.ms_playlist-card-info>*,
+.ms_playlists-created-text  {
+    font-family: 'Gruppo', cursive;
+}
+
+.ms_playlist-card {
+    height: 12rem;
+    width: 10rem;
+}
+
+.ms_playlist-card-cover-img-container {
+    background-color: rgba(25, 25, 26, 0.9);
+    height: 10rem;
+    width: 100%;
+    position: relative;
+}
+
+.ms_playlist-card-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ms_playlist-card-info {
+    flex-direction: column;
+}
+
+.ms_playlist-card-title,
+.ms_playlist-card-subtitle {
+    color: var(--gray-shade-three);
+    padding: 0.1rem 0.2rem;
+}
+
+.ms_playlist-card-subtitle {
+    font-size: 0.8rem;
+}
+
+.ms_playlist-icon-container {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    height: 50%;
+    left: 0px;
+    width: 100%;
+}
+
+.ms_playlist-delete-icon-container,
+.ms_playlist-icon-container {
+    position: absolute;
+}
+
+.ms_playlist-delete-icon-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.ms_playlist-icon-container>* {
+    color: var(--gray-shade-three);
+    font-size: 1.5rem;
+}
+
+.ms_playlist-delete-icon-container>* {
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.ms_playlist-delete-icon-container:hover >*,
+.ms_playlist-delete-icon-container:hover {
+    background-color: var(--black);
+    color: var(--action);
+}
+
+@media only screen and (max-width: 400px) {
+    .ms_playlists-created-text {
+        font-size: 1rem;
+    }
+}
