@@ -8,6 +8,7 @@ Musing studio is a video library app made using reactJs. Is has list of songs an
 #### Tech Stack
 * ReactJS
 * CSS3
+* Mockbee for backend.
 
 #### Screens
 * Home Page
