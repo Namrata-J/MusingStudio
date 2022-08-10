@@ -46,7 +46,8 @@ If you click on any one of the categories you will be redirected to the video li
  - Those options would contain:
    * Add To Liked - Add to liked videos and could also remove it.
    * Add To Playlist
-   * Add To WatchLater - Add or remove from watchlater.
+   * Add To WatchLater - Add or remove from watchlater.<br>
+   
 ![image](https://user-images.githubusercontent.com/82696858/183916669-94d8619a-9133-4f0a-94d4-3999936df851.png)
 
 
