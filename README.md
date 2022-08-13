@@ -1,22 +1,44 @@
-## Musing Studio
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/82696858/184495857-efa1da2a-8768-43ef-be22-9d53159f48b7.png" width="100">
+</p>
+<h2 align="center">Musing Studio</h2> 
 
-Musing studio is a video library app made using reactJs. Is has list of songs and albums of different artists and categories. 
-
-![image](https://user-images.githubusercontent.com/82696858/183910914-0ac458d3-a5da-4d59-b990-9592578ba48d.png)
-
+<p align="center">A video library app providing list of songs and albums of different artists and categories.</p>
+<p align="center">SPA responsive video player integrated application made using ReactJs.</p>
 
 #### Tech Stack
 * ReactJS
 * CSS3
+* React Router
+* Context API
 * Mockbee for backend.
 
-#### Screens
+<hr>
+
+## Table Of Contents
+1. [Deployment Status](#status)
+2. [Screens](#screens)
+3. [Social PLatforms](#social)
+4. [Contribution Guidlines](#contribution)
+
+<hr>
+
+## Deployment Status<a name="status"></a>
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6dca3fac-b054-4a4b-87c4-ed96685bc172/deploy-status)](https://app.netlify.com/sites/musingstudio/deploys)
+
+[Visit site to know more -->](https://docs.netlify.com/monitor-sites/status-badges/?_ga=2.197489321.74730842.1660376495-236702144.1656589951)
+
+<hr>
+
+## Screens<a name="screens"></a>
 * Home Page
 * Single Video Listing Page
 * Video Listing Page
 * Playlist Page
 * Liked Videos
 * Watch Later
+* 404 Page
 * History
 * Authentication Pages
   - SignUp
@@ -136,3 +158,21 @@ Login if already have an account or do a guest login.
 #### 404 page
 Take care of page not found, displays 404 page if route not found.
 ![image](https://user-images.githubusercontent.com/82696858/183952622-365f6363-275d-409f-aaf1-953ff9b7f728.png)
+
+<hr>
+
+## Connect to us via social platforms<a name="social"></a>
+[Twitter](https://twitter.com/muse_the_coder) <br>
+[LinkedIn](https://www.linkedin.com/in/namrata-jain-2b6203216/) <br>
+[Instagram](https://www.instagram.com/the_dexterous_me/?r=nametag) <br>
+[Gmail](mailto: namratajain29001@gmail.com) <br>
+
+<hr>
+
+## Contribution guidlines<a name="contribution"></a>
+For contributing to expeditech UI,
+1. Clone & Fork the repo.
+2. Make a feature branch from dev.
+3. Commit and push those changes.
+4. Raise the PR(pull request).
+
