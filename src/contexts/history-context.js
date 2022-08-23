@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
+import { toastStyle } from "../utils/customToastTheme";
+import toast from 'react-hot-toast';
 import { useAuth } from "./";
 import axios from "axios";
 
@@ -20,8 +22,9 @@ const HistoryProvider = ({ children }) => {
                     headers: { authorization: encodedData }
                 })
             setVideosAddedToHistory(response.data.history)
+            toast.success('Video Added To History', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server error: cannot add video to history', toastStyle)
         }
     }
 
@@ -33,7 +36,7 @@ const HistoryProvider = ({ children }) => {
                 })
                 setUserHistory(response.data.history)
             } catch (error) {
-                console.log(error)
+                toast.error('Server error: cannot add video to history', toastStyle)
             }
         }
 
@@ -46,8 +49,9 @@ const HistoryProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserHistory(response.data.history)
+            toast.success('A Video Removed From History', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server error occurred', toastStyle)
         }
     }
 
@@ -57,8 +61,9 @@ const HistoryProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserHistory(response.data.history)
+            toast.success('Whole History Cleared', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server error occurred', toastStyle)
         }
     }
 

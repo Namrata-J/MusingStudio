@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
+import { toastStyle } from "../utils/customToastTheme";
+import toast from 'react-hot-toast';
 import { useAuth } from "./";
 import axios from "axios";
 
@@ -21,8 +23,9 @@ const WatchLaterProvider = ({ children }) => {
                 }
             )
             setAddedToWatchLaterVideos(response.data.watchlater)
+            toast.success('Added To WatchLater', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
     
@@ -34,7 +37,7 @@ const WatchLaterProvider = ({ children }) => {
                 })
                 setUserWatchLaterVideos(response.data.watchlater)
             } catch (error) {
-                console.log(error)
+                toast.error('Server Error: Failed Attempt', toastStyle)
             }
         }
 
@@ -47,8 +50,9 @@ const WatchLaterProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserWatchLaterVideos(response.data.watchlater)
+            toast.success('Removed From WatchLater', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
