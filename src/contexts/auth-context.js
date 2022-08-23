@@ -68,8 +68,8 @@ const AuthProvider = ({ children }) => {
     const guestLogInHandler = async () => {
         try {
             const response = await axios.post("/api/auth/login", {
-                email: "adarshbalika@gmail.com",
-                password: "adarshBalika123"
+                email: "musingStudio@gmail.com",
+                password: "musing@1245"
             })
             if (response) {
                 setIsUserLoggedIn(true)
