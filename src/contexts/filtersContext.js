@@ -1,6 +1,6 @@
 import React, { useReducer, useContext, createContext } from "react";
 import { filterCategoryFunc, filterArtistFunc } from "../utils/filterFunc";
-import { VideosFilterReducer } from "reducers/VideosFilterReducer";
+import { VideosFilterReducer } from "../reducers/videosFilterReducer";
 import { useVideo } from "./";
 
 const filterContext = createContext(
