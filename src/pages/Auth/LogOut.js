@@ -16,7 +16,15 @@ const LogOutPage = () => {
                 <div className="ms_logOut-container-action-btns ms_flex">
                     <button
                         className="ms_cp ms_fw-b b-rad1"
-                        onClick={() => { setIsUserLoggedIn(false); navigate("/"); toast.success("LoggedOut Successfully", toastStyle) }}>LogOut</button>
+                        onClick={
+                            () => {
+                                setIsUserLoggedIn(false);
+                                navigate("/");
+                                toast.success("LoggedOut Successfully", toastStyle)
+                            }
+                        }>
+                        LogOut
+                    </button>
                     <button
                         className="ms_cp ms_fw-b b-rad1"
                         onClick={() => navigate(-1)}>Cancel</button>

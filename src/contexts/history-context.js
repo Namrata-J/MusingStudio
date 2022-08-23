@@ -67,7 +67,13 @@ const HistoryProvider = ({ children }) => {
         }
     }
 
-    return <historyContext.Provider value={{ addVideoToHistory, removeVideoFromHistory, clearWholeHistory, userHistory }}>
+    return <historyContext.Provider
+        value={{
+            addVideoToHistory,
+            removeVideoFromHistory,
+            clearWholeHistory,
+            userHistory
+        }}>
         {children}
     </historyContext.Provider>
 }

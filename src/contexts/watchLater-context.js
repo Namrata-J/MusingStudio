@@ -28,7 +28,7 @@ const WatchLaterProvider = ({ children }) => {
             toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
-    
+
     useEffect(() => {
         const getWatchLaterVideos = async () => {
             try {
@@ -46,7 +46,7 @@ const WatchLaterProvider = ({ children }) => {
 
     const deleteFromWatchLaterVideos = async (videoId) => {
         try {
-            const response = await axios.delete(`/api/user/watchlater/${videoId}`,{
+            const response = await axios.delete(`/api/user/watchlater/${videoId}`, {
                 headers: { authorization: encodedData }
             })
             setUserWatchLaterVideos(response.data.watchlater)
@@ -56,9 +56,17 @@ const WatchLaterProvider = ({ children }) => {
         }
     }
 
-    const checkIfVideoIsAlreadyAddedToWatchLater = (userWatchLaterVideos, eachVideo) => userWatchLaterVideos.some((eachWatchLaterVideo) => eachWatchLaterVideo._id === eachVideo._id)
+    const checkIfVideoIsAlreadyAddedToWatchLater = (userWatchLaterVideos, eachVideo) => userWatchLaterVideos.some(
+        (eachWatchLaterVideo) => eachWatchLaterVideo._id === eachVideo._id
+    )
 
-    return <watchLaterContext.Provider value={{ addToWatchLater, userWatchLaterVideos, deleteFromWatchLaterVideos, checkIfVideoIsAlreadyAddedToWatchLater }}>
+    return <watchLaterContext.Provider
+        value={{
+            addToWatchLater,
+            userWatchLaterVideos,
+            deleteFromWatchLaterVideos,
+            checkIfVideoIsAlreadyAddedToWatchLater
+        }}>
         {children}
     </watchLaterContext.Provider>
 }

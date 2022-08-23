@@ -23,12 +23,19 @@ const VideoRecommendation = (msSingleVideoCardDetail) => {
                 msSingleVideoCardDetail.category_type !== undefined && <div className="ms_recommendations-container ms_flex">
                     {
                         filteredRecommendations.map((eachRecommendation) => (
-                            <Link className="ms_recommended-video-link" to={`/videoDetail/${eachRecommendation._id}`} key={eachRecommendation._id}>
+                            <Link
+                                className="ms_recommended-video-link"
+                                to={`/videoDetail/${eachRecommendation._id}`}
+                                key={eachRecommendation._id}>
                                 <div className="ms_recommended-video ms_flex ms_cp b-rad1">
                                     <img src={eachRecommendation.music_img} />
                                     <div className="ms_recommended-video-info ms_flex">
-                                        <p className="ms_recommended-video-title ms_fw-b">{eachRecommendation.music_title}</p>
-                                        <p className="ms_recommended-video-duration">{eachRecommendation.music_description.music_duration}</p>
+                                        <p className="ms_recommended-video-title ms_fw-b">
+                                            {eachRecommendation.music_title}
+                                        </p>
+                                        <p className="ms_recommended-video-duration">
+                                            {eachRecommendation.music_description.music_duration}
+                                        </p>
                                     </div>
                                     <div
                                         className="ms_recommended-video-icon-container b-rad4"
@@ -36,7 +43,8 @@ const VideoRecommendation = (msSingleVideoCardDetail) => {
                                             e.stopPropagation();
                                             e.preventDefault();
                                             eachRecommendation._id === videoIdOfCard ?
-                                                setVideoIdOfCard("") : setVideoIdOfCard(eachRecommendation._id)
+                                                setVideoIdOfCard("") :
+                                                setVideoIdOfCard(eachRecommendation._id)
                                         }}>
                                         <BiDotsVerticalRounded />
                                         <div

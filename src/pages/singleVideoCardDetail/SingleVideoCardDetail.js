@@ -27,7 +27,9 @@ const SingleVideoCardDetailPage = () => {
     return (
         <div className="ms_single-videoCard-detail-page page">
             {
-                msSingleVideoCardDetail !== undefined ? <SingleVideoListing {...msSingleVideoCardDetail} /> : <SafeFallBack />
+                msSingleVideoCardDetail !== undefined ?
+                    <SingleVideoListing {...msSingleVideoCardDetail} /> :
+                    <SafeFallBack />
             }
             <CreatePlaylistPopUp />
         </div>

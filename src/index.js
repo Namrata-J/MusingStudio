@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import { MStudioProviders } from "./components/";
+import { MStudioProviders } from "./combinedProviders/MStudioProviders";
 
 // Call make Server
 makeServer();

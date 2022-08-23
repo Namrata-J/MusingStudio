@@ -1,27 +1,12 @@
-import { HistoryPage } from "./history/History";
-import { HomePage } from "./home/Home";
-import { LikedVideosPage } from "./likedVideos/LikedVideos";
-import { PlaylistPage } from "./playlist/Playlist";
-import { VideoListingPage } from "./videoListing/VideoListing";
-import { WatchLaterPage } from "./watchLater/WatchLater";
-import { LogInPage } from "./Auth/LogIn";
-import { LogOutPage } from "./Auth/LogOut";
-import { SignUpPage } from "./Auth/SignUp";
-import { SingleVideoCardDetailPage } from "./singleVideoCardDetail/SingleVideoCardDetail";
-import { NoRouteMatchPage } from "./NoRouteMatch/NoRouteMatch";
-import { SinglePlaylistVideosListingPage } from "./singlePlaylistVideosListing/SinglePlaylistVideosListing";
-
-export {
-    HistoryPage,
-    HomePage,
-    LikedVideosPage,
-    PlaylistPage,
-    VideoListingPage,
-    WatchLaterPage,
-    LogInPage,
-    LogOutPage,
-    SignUpPage,
-    SingleVideoCardDetailPage,
-    NoRouteMatchPage,
-    SinglePlaylistVideosListingPage
-};
+export { HistoryPage } from "./history/History";
+export { HomePage } from "./home/Home";
+export { LikedVideosPage } from "./likedVideos/LikedVideos";
+export { PlaylistPage } from "./playlist/Playlist";
+export { VideoListingPage } from "./videoListing/VideoListing";
+export { WatchLaterPage } from "./watchLater/WatchLater";
+export { LogInPage } from "./Auth/LogIn";
+export { LogOutPage } from "./Auth/LogOut";
+export { SignUpPage } from "./Auth/SignUp";
+export { SingleVideoCardDetailPage } from "./singleVideoCardDetail/SingleVideoCardDetail";
+export { NoRouteMatchPage } from "./NoRouteMatch/NoRouteMatch";
+export { SinglePlaylistVideosListingPage } from "./singlePlaylistVideosListing/SinglePlaylistVideosListing";

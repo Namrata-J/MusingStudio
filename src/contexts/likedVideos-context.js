@@ -57,9 +57,17 @@ const LikedVideosProvider = ({ children }) => {
         }
     }
 
-    const checkIfVideoIsAlreadyLiked = (userLikedVideos, eachVideo) => userLikedVideos.some((eachLikedVideo) => eachLikedVideo._id === eachVideo._id)
+    const checkIfVideoIsAlreadyLiked = (userLikedVideos, eachVideo) => userLikedVideos.some(
+        (eachLikedVideo) => eachLikedVideo._id === eachVideo._id
+    )
 
-    return <likedVideosContext.Provider value={{ addToLikedVideos, userLikedVideos, removeFromLikedVideos, checkIfVideoIsAlreadyLiked}}>
+    return <likedVideosContext.Provider
+        value={{
+            addToLikedVideos,
+            userLikedVideos,
+            removeFromLikedVideos,
+            checkIfVideoIsAlreadyLiked
+        }}>
         {children}
     </likedVideosContext.Provider>
 }

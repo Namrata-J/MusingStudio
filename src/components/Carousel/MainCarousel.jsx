@@ -16,7 +16,17 @@ const HomePageCarousel = () => {
                     (eachObj) => (
                         <div className="ms_main-carousel-img-container"
                             key={eachObj._id}
-                            onClick={() => { dispatchOfVideosFilter({ type: "FILTER_BY_CATEGORY", payload: eachObj.category }); navigate("/videoListing") }}>
+                            onClick={
+                                () => {
+                                    dispatchOfVideosFilter(
+                                        {
+                                            type: "FILTER_BY_CATEGORY",
+                                            payload: eachObj.category
+                                        }
+                                    );
+                                    navigate("/videoListing")
+                                }
+                            }>
                             <img src={eachObj.img} alt="image" />
                         </div>
                     ))

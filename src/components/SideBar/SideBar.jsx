@@ -9,14 +9,20 @@ const SideBar = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="ms_sideBar-component" style={{ display: hamburgerPopUpContainerDisplay }}>
+        <div
+            className="ms_sideBar-component"
+            style={{ display: hamburgerPopUpContainerDisplay }}>
             <ul>
                 {
                     hamburgerPopUpContainerList.map((item, index) =>
                         item.itemLink === "/videoListing" ?
                             <div className="ms_sidebar-link ms_cp ms_flex"
                                 key={index}
-                                onClick={() => { dispatchOfVideosFilter({ type: "CLEAR" }); navigate("/videoListing") }}>
+                                onClick={
+                                    () => {
+                                        dispatchOfVideosFilter({ type: "CLEAR" });
+                                        navigate("/videoListing")
+                                    }}>
                                 <li className="ms_sideBar-list-item ms_flex">
                                     <div>{item.itemIcon}</div>
                                     <div className="ms_sideBar-item ms_fw-b">{item.itemName}</div>

@@ -1,5 +1,11 @@
 import "./home.css";
-import { Header, SideBar, HomePageCarousel, CollectionByDiffCategories, CollectionByArtists } from "../../components";
+import {
+    Header,
+    SideBar,
+    HomePageCarousel,
+    CollectionByDiffCategories,
+    CollectionByArtists
+} from "../../components";
 
 const HomePage = () => {
     return (

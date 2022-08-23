@@ -1,4 +1,4 @@
-import { RoutesComponent } from "./components/";
+import { RoutesComponent } from "./Routes/Routes";
 import { Toaster } from 'react-hot-toast';
 
 function App() {

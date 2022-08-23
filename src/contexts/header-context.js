@@ -22,20 +22,26 @@ const HeaderProvider = ({ children }) => {
     const [searchBarInput, setSearchBarInput] = useState("");
 
     const getTheProfilePopUpContainerDisplay = (profilePopUpContainerDisplay) => {
-        profilePopUpContainerDisplay === "none" ? setProfilePopUpContainerDisplay("block") : setProfilePopUpContainerDisplay("none")
+        profilePopUpContainerDisplay === "none" ?
+            setProfilePopUpContainerDisplay("block") :
+            setProfilePopUpContainerDisplay("none")
         setSearchPopUpContainerDisplay("none")
         setHamburgerPopUpContainerDispay("none")
     }
 
     const getTheSearchPopUpContainerDisplay = (searchPopUpContainerDisplay) => {
-        searchPopUpContainerDisplay === "none" ? setSearchPopUpContainerDisplay("flex") : setSearchPopUpContainerDisplay("none");
+        searchPopUpContainerDisplay === "none" ?
+            setSearchPopUpContainerDisplay("flex") :
+            setSearchPopUpContainerDisplay("none");
         setSearchBarInput("")
         setProfilePopUpContainerDisplay("none")
         setHamburgerPopUpContainerDispay("none")
     }
 
     const getTheHamburgerPopUpContainerDisplay = (hamburgerPopUpContainerDisplay) => {
-        hamburgerPopUpContainerDisplay === "none" ? setHamburgerPopUpContainerDispay("block") : setHamburgerPopUpContainerDispay("none")
+        hamburgerPopUpContainerDisplay === "none" ?
+            setHamburgerPopUpContainerDispay("block") :
+            setHamburgerPopUpContainerDispay("none")
         setProfilePopUpContainerDisplay("none")
         setSearchPopUpContainerDisplay("none")
     }

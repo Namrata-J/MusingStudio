@@ -18,7 +18,12 @@ const SignUpPage = () => {
                         id="ms_signIn-email"
                         className="ms_authFormInput ms_input b-rad1"
                         value={formData.userEmail}
-                        onChange={(e) => { setSignUpErrMsg(""); setFormData({ ...formData, userEmail: e.target.value }) }}
+                        onChange={
+                            (e) => {
+                                setSignUpErrMsg("");
+                                setFormData({ ...formData, userEmail: e.target.value })
+                            }
+                        }
                         required />
 
                     <label htmlFor="ms_signIn-pwd" className="ms_authForm-label ms_fw-b">Password:</label>
@@ -27,7 +32,12 @@ const SignUpPage = () => {
                         id="ms_signIn-pwd"
                         className="ms_authFormInput ms_input b-rad1"
                         value={formData.userPwd}
-                        onChange={(e) => { setSignUpErrMsg(""); setFormData({ ...formData, userPwd: e.target.value }) }}
+                        onChange={
+                            (e) => {
+                                setSignUpErrMsg("");
+                                setFormData({ ...formData, userPwd: e.target.value })
+                            }
+                        }
                         required />
 
                     <button
