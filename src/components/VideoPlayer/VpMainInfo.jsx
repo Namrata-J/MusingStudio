@@ -7,7 +7,12 @@ const VedioPlayerMainInfo = (msSingleVideoCardDetail) => {
 
     const navigate = useNavigate();
     const { isUserLoggedIn } = useAuth();
-    const { checkIfVideoIsAlreadyLiked, userLikedVideos, addToLikedVideos, removeFromLikedVideos } = useLikedVideos();
+    const {
+        checkIfVideoIsAlreadyLiked,
+        userLikedVideos,
+        addToLikedVideos,
+        removeFromLikedVideos
+    } = useLikedVideos();
 
     return (
         <div className="ms_vedio-player-info ms_flex">
@@ -26,16 +31,19 @@ const VedioPlayerMainInfo = (msSingleVideoCardDetail) => {
                 onClick={() => {
                     isUserLoggedIn ?
                         checkIfVideoIsAlreadyLiked(userLikedVideos, msSingleVideoCardDetail) ?
-                            removeFromLikedVideos(msSingleVideoCardDetail._id) : addToLikedVideos(msSingleVideoCardDetail) :
+                            removeFromLikedVideos(msSingleVideoCardDetail._id) :
+                            addToLikedVideos(msSingleVideoCardDetail) :
                         navigate("/login")
                 }}
                 style={
                     checkIfVideoIsAlreadyLiked(userLikedVideos, msSingleVideoCardDetail) ?
-                        { color: "var(--action)" } : { color: "var(--gray-shade-three)" }
+                        { color: "var(--action)" } :
+                        { color: "var(--gray-shade-three)" }
                 }>
                 {
                     checkIfVideoIsAlreadyLiked(userLikedVideos, msSingleVideoCardDetail) ?
-                        `${msSingleVideoCardDetail.likes + 1}` : `${msSingleVideoCardDetail.likes}`
+                        `${msSingleVideoCardDetail.likes + 1}` :
+                        `${msSingleVideoCardDetail.likes}`
                 }
                 <AiFillLike />
             </div>

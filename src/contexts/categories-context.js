@@ -5,7 +5,13 @@ const categoryContext = createContext({ msCategories: [] });
 
 const CategoryProvider = ({ children }) => {
 
-    const [msCategories, setMsCategories] = useState({ carouselImages: [], musicGenres: [], musicArtists: [] });
+    const [msCategories, setMsCategories] = useState(
+        {
+            carouselImages: [],
+            musicGenres: [],
+            musicArtists: []
+        }
+    );
 
     useEffect(() => {
         const fetchData = async () => {

@@ -8,9 +8,12 @@ const VideoCardListingSection = () => {
     const { setVideoIdOfCard } = useVideoCard();
 
     return (
-        <div className="ms_videoCard-listing-section ms_flex" onClick={() => setVideoIdOfCard("")}>
+        <div
+            className="ms_videoCard-listing-section ms_flex"
+            onClick={() => setVideoIdOfCard("")}>
             {
-                filteredVideosToBeShown?.length === 0 ? <NoResultsFoundComp /> :
+                filteredVideosToBeShown?.length === 0 ?
+                    <NoResultsFoundComp /> :
                     filteredVideosToBeShown?.map((eachVideo) => (
                         <VideoCard {...eachVideo} key={eachVideo._id} />
                     ))

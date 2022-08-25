@@ -13,7 +13,9 @@ const PrivateRouteCard = ({ eachVideo, playlistId }) => {
     const { deleteVideoFromPlaylist } = usePlaylist();
 
     return (
-        <div className="ms_privateRouteVideoCard-card b-rad1 ms_cp ms_flex" onClick={() => navigate(`/videoDetail/${eachVideo._id}`)}>
+        <div
+            className="ms_privateRouteVideoCard-card b-rad1 ms_cp ms_flex"
+            onClick={() => navigate(`/videoDetail/${eachVideo._id}`)}>
             <div className="ms_privateRouteVideoCard-img-container">
                 <img className="ms_privateRouteVideoCard-img" src={eachVideo.music_img} />
             </div>
@@ -24,23 +26,59 @@ const PrivateRouteCard = ({ eachVideo, playlistId }) => {
                 <p className="ms_privateRouteVideoCard-music-duration">{eachVideo?.music_description?.music_duration}</p>
             </div>
             <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
-                onClick={(e) => { e.stopPropagation(); removeFromLikedVideos(eachVideo._id) }}
-                style={location?.state?.from === "/likedVideos" ? { display: "block" } : { display: "none" }}>
+                onClick={
+                    (e) => {
+                        e.stopPropagation();
+                        removeFromLikedVideos(eachVideo._id)
+                    }
+                }
+                style={
+                    location?.state?.from === "/likedVideos" ?
+                        { display: "block" } :
+                        { display: "none" }
+                }>
                 <AiFillLike className="ms_privateRouteVideoCard-like-icon" />
             </div>
             <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
-                onClick={(e) => { e.stopPropagation(); deleteFromWatchLaterVideos(eachVideo._id) }}
-                style={location?.state?.from === "/watchLater" ? { display: "block" } : { display: "none" }}>
+                onClick={
+                    (e) => {
+                        e.stopPropagation();
+                        deleteFromWatchLaterVideos(eachVideo._id)
+                    }
+                }
+                style={
+                    location?.state?.from === "/watchLater" ?
+                        { display: "block" } :
+                        { display: "none" }
+                }>
                 <MdWatchLater className="ms_privateRouteVideoCard-like-icon" />
             </div>
             <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
-                onClick={(e) => { e.stopPropagation(); removeVideoFromHistory(eachVideo._id) }}
-                style={location?.state?.from === "/history" ? { display: "block" } : { display: "none" }}>
+                onClick={
+                    (e) => {
+                        e.stopPropagation();
+                        removeVideoFromHistory(eachVideo._id)
+                    }
+                }
+                style={
+                    location?.state?.from === "/history" ?
+                        { display: "block" } :
+                        { display: "none" }
+                }>
                 <AiFillDelete className="ms_privateRouteVideoCard-like-icon" />
             </div>
             <div className="ms_privateRouteVideoCard-icon-container b-rad4 ms_cp"
-                onClick={(e) => { e.stopPropagation(); deleteVideoFromPlaylist(playlistId, eachVideo._id) }}
-                style={location?.state?.from === undefined ? { display: "block" } : { display: "none" }}>
+                onClick={
+                    (e) => {
+                        e.stopPropagation();
+                        deleteVideoFromPlaylist(playlistId, eachVideo._id)
+                    }
+                }
+                style={
+                    location?.state?.from === undefined ?
+                        { display: "block" } :
+                        { display: "none" }
+                }>
                 <RiDeleteBackFill className="ms_privateRouteVideoCard-like-icon" />
             </div>
         </div>

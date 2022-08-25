@@ -10,7 +10,7 @@ import {
     OptionsIconProvider,
     HistoryProvider,
     PlaylistProvider
-} from "../../contexts/";
+} from "../contexts";
 
 const MStudioProviders = ({ children }) => {
     return (

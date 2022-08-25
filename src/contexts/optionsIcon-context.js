@@ -22,23 +22,35 @@ const OptionsIconProvider = ({ children }) => {
         switch (eachOption.optionFor) {
             case "LIKE_OPERATION":
                 if (description === "FOR_OPERATION") {
-                    checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? removeFromLikedVideos(eachVideo._id) : addToLikedVideos(eachVideo)
+                    checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ?
+                        removeFromLikedVideos(eachVideo._id) :
+                        addToLikedVideos(eachVideo)
                     break;
                 } else
                     if (description === "FOR_STYLE") {
-                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? { color: "var(--action)" } : { color: "var(--black)" }
+                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ?
+                            { color: "var(--action)" } :
+                            { color: "var(--black)" }
                     } else
-                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ? "Remove" : `${eachOption.optionName}`
+                        return checkIfVideoIsAlreadyLiked(userLikedVideos, eachVideo) ?
+                            "Remove" :
+                            `${eachOption.optionName}`
 
             case "WATCH_LATER_OPERATION":
                 if (description === "FOR_OPERATION") {
-                    checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? deleteFromWatchLaterVideos(eachVideo._id) : addToWatchLater(eachVideo)
+                    checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ?
+                        deleteFromWatchLaterVideos(eachVideo._id) :
+                        addToWatchLater(eachVideo)
                     break;
                 } else
                     if (description === "FOR_STYLE") {
-                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? { color: "var(--action)" } : { color: "var(--black)" }
+                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ?
+                            { color: "var(--action)" } :
+                            { color: "var(--black)" }
                     } else
-                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ? "Remove" : `${eachOption.optionName}`
+                        return checkIfVideoIsAlreadyAddedToWatchLater(userWatchLaterVideos, eachVideo) ?
+                            "Remove" :
+                            `${eachOption.optionName}`
         }
     }
 

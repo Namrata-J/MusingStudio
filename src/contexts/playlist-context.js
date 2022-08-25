@@ -1,4 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
+import { toastStyle } from "../utils/customToastTheme";
+import toast from 'react-hot-toast';
 import { useAuth } from "./";
 import axios from "axios";
 
@@ -30,8 +32,9 @@ const PlaylistProvider = ({ children }) => {
                     headers: { authorization: encodedData }
                 })
             setAddedPlaylists(response.data.playlists)
+            toast.success('New Playlist Created', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
@@ -43,7 +46,7 @@ const PlaylistProvider = ({ children }) => {
                 })
                 setUserPlaylists(response.data.playlists)
             } catch (error) {
-                console.log(error)
+                toast.error('Server Error: Failed Attempt', toastStyle)
             }
         }
 
@@ -56,8 +59,9 @@ const PlaylistProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserPlaylists(response.data.playlists)
+            toast.success('Playlist deleted', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
@@ -71,8 +75,9 @@ const PlaylistProvider = ({ children }) => {
                     headers: { authorization: encodedData }
                 })
             setModifiedPlaylist(response.data.playlist)
+            toast.success('Video Added To Playlist', toastStyle)
         } catch (error) {
-            console.log(errror)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
@@ -83,7 +88,7 @@ const PlaylistProvider = ({ children }) => {
             })
             setUserPlaylistObj(response.data.playlist)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
@@ -93,8 +98,9 @@ const PlaylistProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserPlaylistObj(response.data.playlist)
+            toast.success('Video Deleted From Playlist', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 

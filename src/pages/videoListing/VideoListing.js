@@ -1,5 +1,11 @@
 import "./videoListing.css";
-import { Header, SideBar, ChipsListingSection, VideoCardListingSection, CreatePlaylistPopUp } from "../../components";
+import {
+    Header,
+    SideBar,
+    ChipsListingSection,
+    VideoCardListingSection,
+    CreatePlaylistPopUp
+} from "../../components";
 
 const VideoListingPage = () => {
     return (

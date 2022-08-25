@@ -1,4 +1,6 @@
 import axios from "axios";
+import toast from 'react-hot-toast';
+import { toastStyle } from "../utils/customToastTheme";
 import { useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useContext, createContext } from "react";
 
@@ -28,9 +30,10 @@ const AuthProvider = ({ children }) => {
                         setEncodedData(response.data.encodedToken)
                         setIsUserLoggedIn(true)
                         navigate("/")
+                        toast.success('Successfully loggedIn!!', toastStyle)
                         setFormData({ ...formData, userEmail: "", userPwd: "" })
                     } catch (error) {
-                        console.log(error)
+                        toast.error("Server error", toastStyle)
                     }
                 } else {
                     setSignUpErrMsg("Pwd should be alphanumeric and have atleast six characters")
@@ -55,10 +58,11 @@ const AuthProvider = ({ children }) => {
                 setEncodedData(response.data.encodedToken)
                 setIsUserLoggedIn(true)
                 navigate("/")
+                toast.success('Successfully loggedIn!', toastStyle)
                 setFormData({ ...formData, userEmail: "", userPwd: "" })
             } catch (error) {
                 setLogInErrMsg("Either email or pwd is incorrect")
-                console.log(error)
+                toast.error("Error occurred: try again!!", toastStyle)
             }
         } else {
             setLogInErrMsg("Please Fill Out All The Fields")
@@ -78,9 +82,10 @@ const AuthProvider = ({ children }) => {
                     navigate(location?.state?.from?.pathname, { replace: true })
                 } else
                     navigate("/")
+                toast.success('Successfully loggedIn!!', toastStyle)
             }
         } catch (error) {
-            console.log(error)
+            toast.error("Server error", toastStyle)
         }
     }
 

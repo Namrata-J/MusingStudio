@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext, createContext } from "react";
+import { toastStyle } from "../utils/customToastTheme";
+import toast from 'react-hot-toast';
 import { useAuth } from "./";
 import axios from "axios";
 
@@ -21,8 +23,9 @@ const LikedVideosProvider = ({ children }) => {
                 }
             )
             setAddedLikedVideos(response.data.likes)
+            toast.success('Added To Liked', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
@@ -35,7 +38,7 @@ const LikedVideosProvider = ({ children }) => {
 
                 setUserLikedVideos(response.data.likes)
             } catch (error) {
-                console.log(error)
+                toast.error('Server Error: Failed Attempt', toastStyle)
             }
         }
 
@@ -48,14 +51,23 @@ const LikedVideosProvider = ({ children }) => {
                 headers: { authorization: encodedData }
             })
             setUserLikedVideos(response.data.likes)
+            toast.success('Removed From Liked', toastStyle)
         } catch (error) {
-            console.log(error)
+            toast.error('Server Error: Failed Attempt', toastStyle)
         }
     }
 
-    const checkIfVideoIsAlreadyLiked = (userLikedVideos, eachVideo) => userLikedVideos.some((eachLikedVideo) => eachLikedVideo._id === eachVideo._id)
+    const checkIfVideoIsAlreadyLiked = (userLikedVideos, eachVideo) => userLikedVideos.some(
+        (eachLikedVideo) => eachLikedVideo._id === eachVideo._id
+    )
 
-    return <likedVideosContext.Provider value={{ addToLikedVideos, userLikedVideos, removeFromLikedVideos, checkIfVideoIsAlreadyLiked}}>
+    return <likedVideosContext.Provider
+        value={{
+            addToLikedVideos,
+            userLikedVideos,
+            removeFromLikedVideos,
+            checkIfVideoIsAlreadyLiked
+        }}>
         {children}
     </likedVideosContext.Provider>
 }

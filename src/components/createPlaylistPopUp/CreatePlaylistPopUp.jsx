@@ -36,7 +36,7 @@ const CreatePlaylistPopUp = () => {
                             className="ms_cpp-create-btn ms_fw-b ms_input ms_cp"
                             onClick={() => {
                                 playlistName === "" ? "" :
-                                createPlaylist(playlistName)
+                                    createPlaylist(playlistName)
                                 setPlaylistName("")
                             }}>
                             Create
@@ -46,7 +46,7 @@ const CreatePlaylistPopUp = () => {
                     <div className="ms_created-playlists-container b-rad1">
                         {
                             userPlaylists?.length === 0 ? "" :
-                            userPlaylists?.map((eachPlaylist) => (
+                                userPlaylists?.map((eachPlaylist) => (
                                     <div
                                         className="ms-created-playlist b-rad1 ms_flex"
                                         key={eachPlaylist._id}>
@@ -55,7 +55,7 @@ const CreatePlaylistPopUp = () => {
                                             {eachPlaylist.videos.length} videos
                                         </p>
                                         <div className="ms_add-videoToPlaylist-icon-container b-rad4 ms_cp"
-                                        onClick={() => addVideoToPlaylist(eachPlaylist._id, )}>
+                                            onClick={() => addVideoToPlaylist(eachPlaylist._id)}>
                                             <MdAdd className="ms_add-videoToPlaylist-icon" />
                                         </div>
                                     </div>

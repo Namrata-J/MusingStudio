@@ -33,7 +33,8 @@ const VideoCard = (eachVideo) => {
                     onClick={(e) => {
                         e.stopPropagation();
                         eachVideo._id === videoIdOfCard ?
-                            setVideoIdOfCard("") : setVideoIdOfCard(eachVideo._id)
+                            setVideoIdOfCard("") :
+                            setVideoIdOfCard(eachVideo._id)
                     }}>
                     <BiDotsVerticalRounded className="ms_video-card-options-icon" />
                     <div className="ms_video-card-options-popup b-rad1 ms_flex"
@@ -47,9 +48,10 @@ const VideoCard = (eachVideo) => {
                                     className="ms_video-card-option ms_flex"
                                     key={index}
                                     onClick={() => {
-                                        isUserLoggedIn ? eachOption.optionFor === "PLAYLIST_OPERATION" ?
-                                            doAddAPlaylistOptionOperation(eachVideo) :
-                                            getTheEachOptionOperation(eachOption, eachVideo, "FOR_OPERATION") :
+                                        isUserLoggedIn ?
+                                            eachOption.optionFor === "PLAYLIST_OPERATION" ?
+                                                doAddAPlaylistOptionOperation(eachVideo) :
+                                                getTheEachOptionOperation(eachOption, eachVideo, "FOR_OPERATION") :
                                             navigate("/login")
                                     }}
                                     style={

@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { RequiresAuth } from "../";
+import { RequiresAuth } from "../components";
 import {
     HistoryPage,
     HomePage,
@@ -13,7 +13,7 @@ import {
     SingleVideoCardDetailPage,
     NoRouteMatchPage,
     SinglePlaylistVideosListingPage
-} from "../../pages/";
+} from "../pages";
 
 const RoutesComponent = () => {
     return (

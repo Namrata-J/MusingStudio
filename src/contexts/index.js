@@ -1,36 +1,11 @@
-import { useHeader, HeaderProvider } from "./header-context";
-import { useCategory, CategoryProvider } from "./categories-context";
-import { useVideo, VideoProvider } from "./videos-context";
-import { useFilter, FilterProvider } from "./filtersContext";
-import { useAuth, AuthProvider } from "./auth-context";
-import { useLikedVideos, LikedVideosProvider } from "./likedVideos-context";
-import { useVideoCard, VideoCardProvider } from "./videoCard-context";
-import { useWatchLater, WatchLaterProvider } from "./watchLater-context";
-import { useOptionsIcon, OptionsIconProvider } from "./optionsIcon-context";
-import { useHistory, HistoryProvider } from "./history-context";
-import { usePlaylist, PlaylistProvider } from "./playlist-context";
-
-export {
-    useHeader,
-    HeaderProvider,
-    useCategory,
-    CategoryProvider,
-    useVideo,
-    VideoProvider,
-    useFilter,
-    FilterProvider,
-    useAuth,
-    AuthProvider,
-    useLikedVideos,
-    LikedVideosProvider,
-    useVideoCard,
-    VideoCardProvider,
-    useWatchLater,
-    WatchLaterProvider,
-    useOptionsIcon,
-    OptionsIconProvider,
-    useHistory,
-    HistoryProvider,
-    usePlaylist,
-    PlaylistProvider
-};
+export { useHeader, HeaderProvider } from "./header-context";
+export { useCategory, CategoryProvider } from "./categories-context";
+export { useVideo, VideoProvider } from "./videos-context";
+export { useFilter, FilterProvider } from "./filtersContext";
+export { useAuth, AuthProvider } from "./auth-context";
+export { useLikedVideos, LikedVideosProvider } from "./likedVideos-context";
+export { useVideoCard, VideoCardProvider } from "./videoCard-context";
+export { useWatchLater, WatchLaterProvider } from "./watchLater-context";
+export { useOptionsIcon, OptionsIconProvider } from "./optionsIcon-context";
+export { useHistory, HistoryProvider } from "./history-context";
+export { usePlaylist, PlaylistProvider } from "./playlist-context";

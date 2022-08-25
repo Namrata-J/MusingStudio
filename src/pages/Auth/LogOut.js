@@ -1,6 +1,8 @@
 import "./auth.css";
-import { useNavigate } from "react-router-dom";
+import toast from 'react-hot-toast';
 import { useAuth } from "../../contexts/";
+import { useNavigate } from "react-router-dom";
+import { toastStyle } from "../../utils/customToastTheme";
 
 const LogOutPage = () => {
 
@@ -14,7 +16,15 @@ const LogOutPage = () => {
                 <div className="ms_logOut-container-action-btns ms_flex">
                     <button
                         className="ms_cp ms_fw-b b-rad1"
-                        onClick={() => { setIsUserLoggedIn(false); navigate("/") }}>LogOut</button>
+                        onClick={
+                            () => {
+                                setIsUserLoggedIn(false);
+                                navigate("/");
+                                toast.success("LoggedOut Successfully", toastStyle)
+                            }
+                        }>
+                        LogOut
+                    </button>
                     <button
                         className="ms_cp ms_fw-b b-rad1"
                         onClick={() => navigate(-1)}>Cancel</button>
