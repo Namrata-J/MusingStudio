@@ -13,6 +13,12 @@
 * Context API
 * Mockbee for backend.
 
+#### Features
+- Authentication
+- Toasts, video listing, Filter functionality
+- Playlist/watch later/history management
+- Like/unlike functionality
+
 <hr>
 
 ## Table Of Contents
